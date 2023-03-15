@@ -3,7 +3,6 @@ const fs = require('fs');
 require('dotenv').config();
 let nextUrl = null;
 let sousaArray = [];
-let tempArray;
 
 let headers = {
     headers: {
@@ -25,12 +24,9 @@ async function gatherListings(){
         if(res.data["@odata.nextLink"]){
             nextUrl = res.data["@odata.nextLink"]
         }
-        tempArray = JSON.stringify(res.data.value.filter(function(listing){
-            return listing.ListAgentFullName == "Jorge DeSousa" && listing.MlsStatus == "Active";
-        }), null, 4)
-        if(tempArray != "[]"){
-            sousaArray += tempArray;
-        }
+        sousaArray = sousaArray.concat(res.data.value.filter(function(listing){
+            return listing.ListAgentFullName === "Jorge DeSousa" && listing.MlsStatus === "Active";
+        }))
     })
     .catch(err => console.log(err))
 
@@ -46,16 +42,13 @@ async function gatherListings(){
                 nextUrl = null;
             }
             
-            tempArray = JSON.stringify(res.data.value.filter(function(listing){
-                return listing.ListAgentFullName == "Jorge DeSousa" && listing.MlsStatus == "Active";
-            }), null, 4)
-            if(tempArray != "[]"){
-                sousaArray += tempArray;
-            }
+            sousaArray = sousaArray.concat(res.data.value.filter(function(listing){
+                return listing.ListAgentFullName === "Jorge DeSousa" && listing.MlsStatus === "Active";
+            }))
         })
         .catch(err => console.log(err))
     }
-    fs.writeFile("./listings.json", sousaArray, 'utf8', function(err){
+    fs.writeFile("../src/listings.json", JSON.stringify(sousaArray, null, 4), 'utf8', function(err){
         if(err){
             return console.log(err)
         }
@@ -63,4 +56,4 @@ async function gatherListings(){
     })
 }
 
-gatherListings();
+module.exports = gatherListings;
