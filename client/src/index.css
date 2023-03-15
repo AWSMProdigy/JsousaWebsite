@@ -2,47 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'PT Sans', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
   }
   
-  .home,
-  .services,
-  .products,
-  .sign-up {
-    display: flex;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-  }
-  
-  .services {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
-  
-  .products {
-    background-position: center;
-    background-size: fill;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
-  
-  .sign-up {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
 
-  :root{
-    --primary: #fff
-}
 
 .btn {
     padding: 8px 20px;
@@ -434,8 +397,11 @@
     z-index: -1;
 } 
 
+.platBG{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/Platinum.jpg');
+}
+
 .parallax{
-  background-image: url('./images/Platinum.jpg');
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -443,14 +409,66 @@
   background-size: cover;
 }
 
+.hero{
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+  object-fit: contain;
+  padding-bottom: 10px;
+}
+
+.aboutHero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+  object-fit: contain;
+}
+
+.aboutHero img{
+  position: relative;
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
+}
+
+.aboutHero h1{
+  position: absolute;
+  left: 0;
+  color: rgb(255, 255, 255);
+  font-size: 100px;
+  font-style: italic;
+  width: 100%;
+
+}
+
+.hero > h1 {
+  color: rgb(255, 255, 255);
+  font-size: 100px;
+  margin-top: 30px;
+  font-style: italic;
+}
+
+.hero > p {
+  margin-top: 8px; 
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 50px;
+}
+
 .listing-container{
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
-    object-fit: contain;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+  object-fit: contain;
 }
 
 .listing-container > h1 {
@@ -591,11 +609,11 @@
   }
 
   .featured{
+    padding-top: 15px;
     background-color: white;
   }
 
   .featured h1{
-    margin-top: 15px;
     margin-bottom: 15px;
   }
 
@@ -751,16 +769,17 @@
 
   .About-container{
     justify-content: center;
-    max-width: 100%;
+    max-width: 85%;
     height: 100%;
     display: flex;
-    align-items: center;
+    margin: 0 auto;
+    padding: 40px 0;
   }
 
-  .About-pic{ 
-    vertical-align: middle;
-    max-width: 60%;
+  .About-container img{
+    width: 40%;
     height: auto;
+    border: #69beff 3px solid;
   }
 
   .About-text{
@@ -768,14 +787,14 @@
     height: auto;
   }
 
-
   .About-text-container{
-    justify-content: center;
+    position: relative;
+    text-align: center;
+    justify-content: space-evenly;
     max-width: 100%;
     align-items: center;
-    vertical-align: center;
     display: flex;
-    float: right;
+    flex-direction: column;
   }
 
   .loc-container{
@@ -814,13 +833,19 @@
     justify-content: center;
     align-items: center;
     padding-top: 15px;
-    background-color: #1f98f4;
+  }
+
+  .blueBG{
+    background-color: #69beff;
   }
 
   .homeCardContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding: 50px 0;
+    width: 75%;
+    font-size: 20px;
   }
 
   .homeCard {
@@ -828,8 +853,9 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    background-color: #1f98f49c;
     padding: 10px;
+    align-items: center;
+    text-align: center;
   }
 
 

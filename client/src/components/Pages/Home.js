@@ -1,34 +1,60 @@
 import React from 'react';
 // import '../App.css';
 import Featured from '../Featured';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse, faHandshake, faStar } from '@fortawesome/free-solid-svg-icons'
 import {Button} from '../Button'
 
 
 function Home(){
     return (
-        <div className='parallax'>
-            <div className='listing-container'>
-                <img alt="headshot"src={require("../../images/Jorge.jpg")} className="headshot"/>                
+        <div className='parallax platBG'>
+            <div className='hero'>
+                <img alt="headshot"src={require("../../images/Jorge.jpg")} className="headshot"/>    
+                <h1>Jorge Sousa</h1>
+                <p>The Realtor That Fights For You</p>            
             </div>
-            <div className='homeSection'>
-                <h1>The Realtor That Wants the Best For You</h1>
-                <p>Jorge puts in the extra effort to make you happy and satisfied when purchasing a new home, or selling your old one.</p>
+            <div className='homeSection blueBG'>
+                <h1>Your Florida realtor dedicated to helping you with...</h1>
                 <div className='homeCardContainer'>
                     <div className='homeCard'>
-                        <i className="fab fa-facebook-f"/>
+                        <FontAwesomeIcon icon={faHouse}/>
+                        <h2>Houses</h2>
+                        {/* Carousel of houses */}
+                    </div>
+                    <div className='homeCard'>
+                        <FontAwesomeIcon icon={faHandshake}/>
+                        <h2>Vacant Land</h2>
+                        {/* Carousel of vacant land */}
+                    </div>
+                    <div className='homeCard'>
+                        <FontAwesomeIcon icon={faStar}/>
+                        <h2>Mobile Homes</h2>
+                        {/* Carousel of mobile homes */}
+                    </div>
+                    <div className='homeCard'>
+                        <FontAwesomeIcon icon={faStar}/>
+                        <h2>Mobile Homes</h2>
+                    </div>
+                </div>
+                {/* <div className='homeCardContainer'>
+                    <div className='homeCard'>
+                        <FontAwesomeIcon icon={faHouse}/>
                         <h2>Reliable</h2>
                     </div>
                     <div className='homeCard'>
-                        <i className="fab fa-house"></i>
-                        <h2>Honest</h2>
+                        <FontAwesomeIcon icon={faHandshake}/>
+                        <h2>Dedicated To You</h2>
                     </div>
                     <div className='homeCard'>
-                        <i className="fa-solid fa-house"></i>
+                        <FontAwesomeIcon icon={faStar}/>
                         <h2>Experienced</h2>
                     </div>
-                </div>
-                <p>Work with a realtor who will fight for you</p>
+                </div> */}
             </div>
+            {/* <div className='homeSection parallax'>
+                Could have listing examples of different items
+            </div> */}
             <Featured></Featured>
         </div>
     );
