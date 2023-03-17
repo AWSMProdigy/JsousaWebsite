@@ -2,7 +2,7 @@ const axios = require('axios');
 const fs = require('fs');
 require('dotenv').config();
 let nextUrl = null;
-let sousaArray = [];
+let landArray = [];
 
 let headers = {
     headers: {
@@ -24,7 +24,7 @@ async function gatherListings(){
         if(res.data["@odata.nextLink"]){
             nextUrl = res.data["@odata.nextLink"]
         }
-        sousaArray = sousaArray.concat(res.data.value.filter(function(listing){
+        landArray = landArray.concat(res.data.value.filter(function(listing){
             return listing.ListAgentFullName === "Jorge DeSousa" && listing.MlsStatus === "Active";
         }))
     })
@@ -42,18 +42,35 @@ async function gatherListings(){
                 nextUrl = null;
             }
             
-            sousaArray = sousaArray.concat(res.data.value.filter(function(listing){
+            landArray = landArray.concat(res.data.value.filter(function(listing){
                 return listing.ListAgentFullName === "Jorge DeSousa" && listing.MlsStatus === "Active";
             }))
         })
         .catch(err => console.log(err))
     }
-    fs.writeFile("../src/listings.json", JSON.stringify(sousaArray, null, 4), 'utf8', function(err){
+    let houseArray = [];
+    for(let i = 0; i < landArray.length; i++){
+        if(landArray[i].PropertyType === "Residential"){
+            houseArray.push(landArray[i]);
+            landArray.splice(i, 1);
+        }
+    }
+
+    fs.writeFile("../src/landListings.json", JSON.stringify(landArray, null, 4), 'utf8', function(err){
+        if(err){
+            return console.log(err)
+        }
+        console.log("Land listings written to json file")
+    });
+
+    fs.writeFile("../src/houseListings.json", JSON.stringify(houseArray, null, 4), 'utf8', function(err){
         if(err){
             return console.log(err)
         }
         console.log("Listings written to json file")
     })
 }
+
+gatherListings();
 
 module.exports = gatherListings;

@@ -1,9 +1,11 @@
 import React from 'react';
 import axios from 'axios';
 import CardItem from '../CardItem';
-let listings;
+let landListings;
+let houseListings;
 try{
-    listings = require('../../listings.json');
+    landListings = require('../../landListings.json');
+    houseListings = require('../../houseListings.json');
 }
 catch(err){
     console.log(err)
@@ -15,7 +17,7 @@ export default class Listings extends React.Component{
     }
     
     render(){
-        console.log(listings[0].ListingKey);
+        console.log(landListings[0].ListingKey);
 
     return (
             <div className='featured'>
@@ -25,7 +27,7 @@ export default class Listings extends React.Component{
                     <textarea>Search</textarea>
                 </div>
                 <div className='featuredHomes'>
-                    {listings.map((listing, i) => {
+                    {landListings.map((listing, i) => {
                         return <CardItem key={i} src={require("../../images/img-2.jpg")} address={listing.ListingKey} label='poppin off' path='/services'/>
                     })}
                 </div>

@@ -1,5 +1,14 @@
 import React from 'react';
 import CardItem from "./CardItem";
+let landListings;
+let houseListings;
+try{
+    landListings = require('../landListings.json');
+    houseListings = require('../houseListings.json');
+}
+catch(err){
+    console.log(err)
+}
 
 
 function Featured(){
@@ -7,11 +16,9 @@ function Featured(){
         <div className='featured'>
             <h1>Featured Homes</h1>
             <div className='featuredHomes'>
-                <CardItem src={require("../images/img-2.jpg")} price="245,000" address="420 Pog Avenue" bed="3" bath="2" sqft="1400" text="Pop off my wayward son" label='poppin off' path='/services'/>  
-                <CardItem src={require("../images/img-2.jpg")} text="Pop off my wayward son" label='poppin off' path='/services'/>  
-                <CardItem src={require("../images/img-2.jpg")} text="Pop off my wayward son" label='poppin off' path='/services'/>  
-                <CardItem src={require("../images/img-2.jpg")} text="Pop off my wayward son" label='poppin off' path='/services'/>  
-                <CardItem src={require("../images/img-2.jpg")} text="Pop off my wayward son" label='poppin off' path='/services'/>  
+                {houseListings.map((listing, i) => {
+                    return <CardItem key={i} src={"https://d190pq94iryepm.cloudfront.net" + listing.Media[0].MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')} address={listing.ListingKey} label='poppin off' path='/services'/>
+                })}
             </div>
             <h1>Featured Land</h1>
             <div className='featuredHomes'>
