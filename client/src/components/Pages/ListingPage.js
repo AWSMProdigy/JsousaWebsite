@@ -12,16 +12,15 @@ catch(err){
 }
 
 function ListingPage(){
-    const {listingKey} = useParams();
+    const {ListingKey} = useParams();
     const [listing, setListing] = useState();
 
     useEffect(() => {
         if(!listing && window.location.href.indexOf("Residential") > -1) {
-            console.log("Nani?");
-            setListing(houseListings.find(item => item.ListingKey === listingKey));
+            setListing(houseListings.find(item => item.ListingKey === ListingKey));
         }
-        else{
-            setListing(landListings.find(item => item.ListingKey === listingKey));
+        else if(!listing){
+            setListing(landListings.find(item => item.ListingKey === ListingKey));
         }
     }, [])
 
@@ -30,25 +29,24 @@ function ListingPage(){
     const [index, setIndex] = useState(0);
     
     function backwards(){
-        setIndex(index === 0 ? 1 : index - 1)
+        setIndex(index === 0 ? listing.Media.length - 1 : index - 1)
     }
 
     function forwards(){
-        setIndex(index === 1 ? 0 : index + 1)
+        setIndex(index === listing.Media.length - 1 ? 0 : index + 1)
     }
 
     function Carousel(){
         if(listing){
-            {listing.media.map((image, i) => {
+            return(listing.Media.map((image, i) => {
                 return(
                     <li className={index === i ? 'slide-active' : 'slide'}>
                         <img alt={listing.UnparsedAddress} src={"https://d190pq94iryepm.cloudfront.net" + image.MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')}></img>
                     </li>
                 )
-            })}
+            }))
         }
     }
-    console.log(listing);
 
     return(
         <div className='listingPageContainer'>
