@@ -497,6 +497,64 @@
     margin-left:4px;
 }
 
+.carousel{
+
+}
+
+.carousel ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide{
+  position: absolute;
+  opacity: 0;
+  transition-duration: 0.5s ease;
+}
+
+.slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center
+}
+
+.slide-active{
+  position: absolute;
+  opacity: 1;
+}
+
+.carousel-button{
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%); 
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+}
+
+.carousel-button:hover,
+.carousel-button:focus{
+  color: white;
+}
+
+.carousel-button:focus{
+  outline: 1px solid black;
+}
+
+.carousel-button.prev{
+  left: 1rem;
+}
+
+.carousel-button.next
+{
+  right: 1rem;
+}
 @media screen and (max-width: 960px) {
     .listing-container > h1 {
         font-size: 100px;

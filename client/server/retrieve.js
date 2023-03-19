@@ -56,14 +56,14 @@ async function gatherListings(){
         }
     }
 
-    fs.writeFile("../src/landListings.json", JSON.stringify(landArray, null, 4), 'utf8', function(err){
+    fs.writeFile("../src/landListings.json", JSON.stringify(landArray.reverse(), null, 4), 'utf8', function(err){
         if(err){
             return console.log(err)
         }
         console.log("Land listings written to json file")
     });
 
-    fs.writeFile("../src/houseListings.json", JSON.stringify(houseArray, null, 4), 'utf8', function(err){
+    fs.writeFile("../src/houseListings.json", JSON.stringify(houseArray.reverse(), null, 4), 'utf8', function(err){
         if(err){
             return console.log(err)
         }

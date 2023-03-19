@@ -17,7 +17,6 @@ export default class Listings extends React.Component{
     }
     
     render(){
-        console.log(landListings[0].ListingKey);
 
     return (
             <div className='featured'>
@@ -27,16 +26,25 @@ export default class Listings extends React.Component{
                     <textarea>Search</textarea>
                 </div>
                 <div className='featuredHomes'>
-                    {landListings.map((listing, i) => {
-                        return <CardItem key={i} src={require("../../images/img-2.jpg")} address={listing.ListingKey} label='poppin off' path='/services'/>
+                    {houseListings.slice(0, 4).map((listing, i) => {
+                        return <CardItem key={i} src={"https://d190pq94iryepm.cloudfront.net" + listing.Media[0].MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')} address={listing.UnparsedAddress} price={listing.ListPrice} bed={listing.BedroomsTotal} bath={listing.BathroomsTotalInteger} sqft={listing.LotSizeSquareFeet} listingKey={listing.ListingKey} PropertyType={listing.PropertyType}/>
                     })}
                 </div>
                 <h1>Featured Land</h1>
                 <div className='featuredHomes'>
-                    <CardItem src={require("../../images/img-2.jpg")} text="Pop off my wayward son" label='poppin off' path='/services'/>  
-                    <CardItem src={require("../../images/img-2.jpg")} text="Pop off my wayward son" label='poppin off' path='/services'/>  
-                    <CardItem src={require("../../images/img-2.jpg")} text="Pop off my wayward son" label='poppin off' path='/services'/>  
-                    <CardItem src={require("../../images/img-2.jpg")} text="Pop off my wayward son" label='poppin off' path='/services'/>  
+                    {landListings.slice(0, 4).map((listing, i) => {
+                        return <CardItem key={i} src={"https://d190pq94iryepm.cloudfront.net" + listing.Media[0].MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')} address={listing.UnparsedAddress} price={listing.ListPrice} sqft={listing.LotSizeSquareFeet} listingKey={listing.ListingKey} PropertyType={listing.PropertyType}/>
+                    })}
+                </div>
+                <div className='featuredHomes'>
+                    {landListings.slice(4, 8).map((listing, i) => {
+                        return <CardItem key={i} src={"https://d190pq94iryepm.cloudfront.net" + listing.Media[0].MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')} address={listing.UnparsedAddress} price={listing.ListPrice} sqft={listing.LotSizeSquareFeet} listingKey={listing.ListingKey} PropertyType={listing.PropertyType}/>
+                    })}
+                </div>
+                <div className='featuredHomes'>
+                    {landListings.slice(8, 12).map((listing, i) => {
+                        return <CardItem key={i} src={"https://d190pq94iryepm.cloudfront.net" + listing.Media[0].MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')} address={listing.UnparsedAddress} price={listing.ListPrice} sqft={listing.LotSizeSquareFeet} listingKey={listing.ListingKey} PropertyType={listing.PropertyType}/>
+                    })}
                 </div>
         </div>
     )

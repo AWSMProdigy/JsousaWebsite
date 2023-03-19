@@ -8,6 +8,7 @@ import Listings from './Pages/Listings';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Footer from './Pages/Footer'
+import ListingPage from './Pages/ListingPage'
 
 function App() {
     return (
@@ -20,6 +21,8 @@ function App() {
           <Route path='/Listings' element={<Listings/>}/>
           <Route path='/About' element={<About/>}/>
           <Route path='/Contact' element={<Contact/>}/>
+          <Route path='/Listings/Residential/:ListingKey' element={<ListingPage/>}/>
+          <Route path='/Listings/Land/:ListingKey' element={<ListingPage/>}/>
         </Routes>
         <Footer/>
       </Router>
