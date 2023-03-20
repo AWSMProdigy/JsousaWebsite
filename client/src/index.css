@@ -497,8 +497,16 @@
     margin-left:4px;
 }
 
+.listingTop{
+  display: flex;
+}
+
+.listingBot{
+  display: flex;
+}
+
 .carousel{
-  position: absolute;
+  position: relative;
 }
 
 .carousel ul {
@@ -508,6 +516,7 @@
 }
 
 .slide{
+  position: absolute;
   opacity: 0;
   transition-duration: 0.5s ease;
 }
@@ -521,12 +530,11 @@
 }
 
 .slide-active{
-  position: absolute;
   opacity: 1;
+  border: #69beff 1px solid;
 }
 
 .carousel-button{
-  position: absolute;
   background: none;
   border: none;
   font-size: 4rem;
@@ -547,11 +555,15 @@
 }
 
 .carousel-button.prev{
+  position: absolute;
+  top: 50%;
   left: 1rem;
 }
 
 .carousel-button.next
 {
+  position: absolute;
+  top: 50%;
   right: 1rem;
 }
 @media screen and (max-width: 960px) {

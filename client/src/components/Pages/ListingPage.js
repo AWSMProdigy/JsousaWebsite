@@ -59,7 +59,7 @@ function ListingPage(){
                     </ul>
                 </div>
                 <div className='listingDescription'>
-                    <h1></h1>
+                    {listing && <h1>{listing.UnparsedAddress}</h1>}
                     <p></p>
                 </div>
             </div>
