@@ -52,14 +52,21 @@ function ListingPage(){
         <div className='listingPageContainer'>
             <div className='listingTop'>
                 <div className='carousel'>
-                    <button className='carouselButton prev' onClick={backwards}>&#8656</button>
-                    <button className='carouselButton next' onClick={forwards}>&#8658</button>
+                    <button className='carouselButton prev' onClick={backwards}>{'\u21D0'}</button>
+                    <button className='carouselButton next' onClick={forwards}>{'\u21D2'}</button>
                     <ul>      
                         <Carousel/>
                     </ul>
                 </div>
                 <div className='listingDescription'>
-                    {listing && <h1>{listing.UnparsedAddress}</h1>}
+                    {listing && 
+                    <>
+                        <h1>{listing.UnparsedAddress}</h1>
+                        <h3>{listing.City + `, ` + listing.StateOrProvince + ` ` + listing.PostalCode}</h3>
+                        <h2>{`$` + Number(listing.ListPrice).toLocaleString('en')}</h2>
+                        <p>{listing.PublicRemarks}</p>
+                    </>
+                    }
                     <p></p>
                 </div>
             </div>

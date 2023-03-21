@@ -499,6 +499,7 @@
 
 .listingTop{
   display: flex;
+  margin: 10px;
 }
 
 .listingBot{
@@ -506,10 +507,15 @@
 }
 
 .carousel{
+  width: 50%;
+  height: auto;
   position: relative;
+  padding: 10px;
 }
 
 .carousel ul {
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -517,14 +523,19 @@
 
 .slide{
   position: absolute;
-  opacity: 0;
-  transition-duration: 0.5s ease;
 }
 
-.slide img {
-  display: block;
+.slide, .slide-active{
+  opacity: 0;
+  transition-duration: 0.5s ease;
   width: 100%;
   height: 100%;
+}
+
+.slide img, .slide-active img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.6 / 1;
   object-fit: cover;
   object-position: center
 }
@@ -534,38 +545,46 @@
   border: #69beff 1px solid;
 }
 
-.carousel-button{
-  background: none;
-  border: none;
-  font-size: 4rem;
-  top: 50%;
-  transform: translateY(-50%); 
-  cursor: pointer;
-  border-radius: .25rem;
-  padding: 0 .5rem;
-}
-
-.carousel-button:hover,
-.carousel-button:focus{
+.carouselButton:hover{
   color: white;
 }
 
-.carousel-button:focus{
-  outline: 1px solid black;
-}
-
-.carousel-button.prev{
+.carouselButton{
   position: absolute;
   top: 50%;
+  z-index: 2;
+}
+
+.next{
+  right: 1rem;
+}
+
+.prev{
   left: 1rem;
 }
 
-.carousel-button.next
-{
-  position: absolute;
-  top: 50%;
-  right: 1rem;
+.listingDescription{
+  width: 40%;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 20px;
 }
+
+.listingDescription h1{
+  color: #69beff;
+  text-align: left;
+}
+
+.listingDescription h3{
+  color: rgba(116,116,116,1);
+  margin-bottom: 20px;
+}
+
+.listingDescription p{
+  color: rgba(116,116,116,1);
+  line-height: 150%;
+}
+
 @media screen and (max-width: 960px) {
     .listing-container > h1 {
         font-size: 100px;
