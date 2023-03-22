@@ -1,5 +1,616 @@
 [
     {
+        "@odata.id": "https://api.mlsgrid.com/v2/Property('MFR685926535')",
+        "ListingKey": "MFR685926535",
+        "OriginatingSystemKey": "685926535",
+        "AdditionalParcelsYN": false,
+        "Appliances": [
+            "Convection Oven",
+            "Electric Water Heater",
+            "Range",
+            "Refrigerator",
+            "Washer"
+        ],
+        "MFR_Association2YN": "0",
+        "AssociationYN": false,
+        "MFR_AvailableForLeaseYN": "0",
+        "MFR_BarnFeatures": "Hay,Horse Barn",
+        "Basement": [
+            "Crawl Space"
+        ],
+        "BathroomsFull": 1,
+        "BathroomsHalf": 0,
+        "BathroomsTotalInteger": 1,
+        "BedroomsTotal": 2,
+        "BuildingAreaSource": "Owner",
+        "BuildingAreaTotal": 1100,
+        "MFR_BuildingAreaTotalSrchSqM": "102.19",
+        "BuildingAreaUnits": "Square Feet",
+        "BuyerAgencyCompensation": "3.5%",
+        "MFR_CDDYN": "0",
+        "MFR_CalculatedListPriceByCalculatedSqFt": "200.00",
+        "CarportYN": false,
+        "City": "KEYSTONE HEIGHTS",
+        "ConstructionMaterials": [
+            "Log"
+        ],
+        "Cooling": [
+            "Central Air"
+        ],
+        "Country": "US",
+        "CountyOrParish": "Clay",
+        "CumulativeDaysOnMarket": 0,
+        "MFR_CurrentPrice": "220000.00",
+        "DaysOnMarket": 0,
+        "DirectionFaces": "North",
+        "Disclosures": [
+            "None"
+        ],
+        "MFR_EscrowAgentEmail": "ali.endicott@firstintitle.com",
+        "MFR_EscrowAgentName": "Ali Endicott",
+        "MFR_EscrowAgentPhone": "(352)513-4859",
+        "MFR_EscrowCity": "Dunnellon",
+        "MFR_EscrowCompany": "First International Title",
+        "MFR_EscrowPostalCode": "34432",
+        "MFR_EscrowState": "FL",
+        "MFR_EscrowStreetName": "Mary St",
+        "MFR_EscrowStreetNumber": "12013",
+        "MFR_ExistLseTenantYN": "0",
+        "ExteriorFeatures": [
+            "Lighting"
+        ],
+        "Fencing": [
+            "Fenced",
+            "Wire",
+            "Wood"
+        ],
+        "FireplaceFeatures": [
+            "Decorative",
+            "Wood Burning"
+        ],
+        "FireplaceYN": true,
+        "MFR_FloodZoneCode": "X",
+        "MFR_FloodZoneDate": "2014-03-17",
+        "MFR_FloodZonePanel": "12019C0375E",
+        "Flooring": [
+            "Ceramic Tile",
+            "Laminate"
+        ],
+        "FoundationDetails": [
+            "Crawlspace",
+            "Pillar/Post/Pier"
+        ],
+        "GarageYN": false,
+        "Heating": [
+            "Electric"
+        ],
+        "MFR_HomesteadYN": "1",
+        "InteriorFeatures": [
+            "Cathedral Ceiling(s)",
+            "Ceiling Fans(s)",
+            "Skylight(s)",
+            "Solid Surface Counters"
+        ],
+        "InternetAddressDisplayYN": true,
+        "InternetAutomatedValuationDisplayYN": true,
+        "InternetConsumerCommentYN": true,
+        "InternetEntireListingDisplayYN": true,
+        "Levels": [
+            "Two"
+        ],
+        "ListAOR": "Ocala - Marion",
+        "ListAgentAOR": "Ocala - Marion",
+        "ListAgentDirectPhone": "352-857-7499",
+        "ListAgentEmail": "jorgesousarealtor@gmail.com",
+        "ListAgentFax": "352-304-5722",
+        "ListAgentFullName": "Jorge DeSousa",
+        "ListAgentKey": "MFR536943803",
+        "ListAgentMlsId": "MFR271515978",
+        "ListAgentPager": "352-857-7499",
+        "MFR_AttributionContact": "352-620-0207",
+        "MFR_ListOfficeContactPreferred": "352-620-0207",
+        "ListOfficeFax": "352-304-5722",
+        "MFR_ListOfficeHeadOfficeKeyNumeric": "1044912",
+        "ListOfficeKey": "MFR1044912",
+        "ListOfficeMlsId": "MFR271500543",
+        "ListOfficeName": "PLATINUM HOMES AND LAND REALTY",
+        "ListOfficePhone": "352-620-0207",
+        "ListPrice": 220000,
+        "ListingAgreement": "Exclusive Right To Sell",
+        "ListingContractDate": "2023-03-21",
+        "MFR_ListingExclusionYN": "0",
+        "ListingId": "MFROM655128",
+        "ListingTerms": [
+            "Cash",
+            "Conventional"
+        ],
+        "LivingArea": 1100,
+        "MFR_LivingAreaMeters": "102.19",
+        "LivingAreaSource": "Owner",
+        "LivingAreaUnits": "Square Feet",
+        "LotFeatures": [
+            "Cleared",
+            "Corner Lot"
+        ],
+        "LotSizeAcres": 3.34,
+        "LotSizeSquareFeet": 145446,
+        "MFR_LotSizeSquareMeters": "13512",
+        "MLSAreaMajor": "32656 - Keystone Heights",
+        "MlsStatus": "Active",
+        "NewConstructionYN": false,
+        "MFR_NonRepCompensation": "3.5%",
+        "OccupantType": "Owner",
+        "OnMarketDate": "2023-03-21",
+        "OriginalEntryTimestamp": "2023-03-21T17:53:03.000Z",
+        "OriginalListPrice": 220000,
+        "MFR_OriginatingSystemName_": "Stellar MLS",
+        "OtherStructures": [
+            "Barn(s)",
+            "Other"
+        ],
+        "Ownership": "Fee Simple",
+        "ParcelNumber": "14-08-23-001437-696-00",
+        "PoolPrivateYN": false,
+        "PostalCode": "32656",
+        "PostalCodePlus4": "8433",
+        "PrivateRemarks": "PLEASE SUBMIT ALL OFFERS WITH A FLORIDA AS-IS CONTRACT AND INCLUDE POF AND OR PRE-APPROVAL WITH THE OFFER. COMMISSIONS PAID UPON A SUCCESSFUL CLOSING ONLY. INFORMATION IS DEEMED RELIABLE AND ROOM SIZES ARE TO BE VERIFIED BY THE BUYER AND THEIR AGENT. ROOF IS JUST OVER 6 YRS OLD AND A/C IS 10 YRS OLD.",
+        "PropertySubType": "Single Family Residence",
+        "PropertyType": "Residential",
+        "PublicRemarks": "Come see this freshly renovated home that offers a lot of potential, as a getaway or retirement home, an investment property, or a place to raise animals. The home features two bedrooms and a full bathroom, as well as new flooring and fixtures throughout, including a custom-built linen closet and kitchen with new cabinets and lighting. The property includes 3.34 acres of land, ideal for keeping animals like horses, pigs, goats, and chickens. The 1900 sq ft barn with three stalls could also be used as a garage or storage space. The pump house has a shed built over it for additional storage space or room for chickens.\r\n\r\nThe east side of the property features water and horse ties, and there is a trail and spot for a firepit to enjoy under the stars. Lake Marie is nearby with a pavilion for barbequing and hanging out by the water, and the location is convenient to Keystone Heights and Gainesville, with Jacksonville less than an hour away. With plenty of character, privacy, and space for entertaining, this home is definitely worth considering. To learn more and see it for yourself, set your appointment today.\r\nLet's make the move together!",
+        "MFR_PublicRemarksAgent": "Come see this freshly renovated home that offers a lot of potential, as a getaway or retirement home, an investment property, or a place to raise animals. The home features two bedrooms and a full bathroom, as well as new flooring and fixtures throughout, including a custom-built linen closet and kitchen with new cabinets and lighting. The property includes 3.34 acres of land, ideal for keeping animals like horses, pigs, goats, and chickens. The 1900 sq ft barn with three stalls could also be used as a garage or storage space. The pump house has a shed built over it for additional storage space or room for chickens.\r\n\r\nThe east side of the property features water and horse ties, and there is a trail and spot for a firepit to enjoy under the stars. Lake Marie is nearby with a pavilion for barbequing and hanging out by the water, and the location is convenient to Keystone Heights and Gainesville, with Jacksonville less than an hour away. With plenty of character, privacy, and space for entertaining, this home is definitely worth considering. To learn more and see it for yourself, set your appointment today.\r\nLet's make the move together!",
+        "PublicSurveyRange": "23",
+        "PublicSurveySection": "14",
+        "MFR_RATIO_CurrentPrice_By_CalculatedSqFt": "200.00",
+        "MFR_RealtorInfo": "As-Is,No Sign",
+        "RoadSurfaceType": [
+            "Dirt"
+        ],
+        "Roof": [
+            "Shingle"
+        ],
+        "MFR_RoomCount": "4",
+        "MFR_SDEOYN": "0",
+        "SeniorCommunityYN": false,
+        "Sewer": [
+            "Septic Tank"
+        ],
+        "ShowingRequirements": [
+            "Appointment Only",
+            "Call Before Showing",
+            "Call Listing Agent",
+            "Do Not Contact Tenants",
+            "No Sign",
+            "Pet(s) on Premises",
+            "See Remarks",
+            "ShowingTime"
+        ],
+        "SpecialListingConditions": [
+            "None"
+        ],
+        "StandardStatus": "Active",
+        "StateOrProvince": "FL",
+        "StatusChangeTimestamp": "2023-03-21T17:53:03.000Z",
+        "SubdivisionName": "BIG TREE LAKES SEC B",
+        "TaxAnnualAmount": 1109,
+        "TaxBlock": "20",
+        "TaxBookNumber": "12-1",
+        "TaxLegalDescription": "LOTS 2-4 BLK 20 BIG TREE LAKES SEC B AS REC O R 3943 PG 1592",
+        "TaxLot": "2",
+        "TaxYear": 2022,
+        "MFR_TotalAcreage": "2 to less than 5",
+        "MFR_TotalAnnualFees": "0.00",
+        "MFR_TotalMonthlyFees": "0.00",
+        "Township": "08",
+        "TransactionBrokerCompensation": "3.5%",
+        "MFR_UnitNumberYN": "0",
+        "UniversalPropertyId": "US-12019-N-14082300143769600-R-N",
+        "Utilities": [
+            "Electricity Connected",
+            "Phone Available"
+        ],
+        "View": [
+            "Trees/Woods"
+        ],
+        "MFR_WaterAccessYN": "0",
+        "MFR_WaterExtrasYN": "0",
+        "WaterSource": [
+            "Well"
+        ],
+        "MFR_WaterViewYN": "0",
+        "MFR_WaterfrontFeetTotal": "0",
+        "WaterfrontYN": false,
+        "YearBuilt": 1988,
+        "Zoning": "AR",
+        "ModificationTimestamp": "2023-03-21T18:56:10.836Z",
+        "OriginatingSystemName": "mfrmls",
+        "Media": [
+            {
+                "MediaType": "jpg",
+                "Order": 0,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/7c3ddb91-f558-42ff-884e-e9fe74c08f20.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.298Z",
+                "MediaKey": "6419ef1e8a120a57724c6d66"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 1,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/21c86bcd-e6e6-4fe1-b0de-2e3803400bf5.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.276Z",
+                "MediaKey": "6419ef1e8a120a57724c6d67"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 2,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/36ab1049-5b6b-4556-8313-a9366f8cc3aa.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.357Z",
+                "MediaKey": "6419ef1e8a120a57724c6d68"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 3,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/66587bdb-7cb6-470e-823d-86b915544aec.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.283Z",
+                "MediaKey": "6419ef1e8a120a57724c6d69"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 4,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/0987db72-4d77-40b5-abbb-17a040ed10c7.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.287Z",
+                "MediaKey": "6419ef1e8a120a57724c6d6a"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 5,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/4dd18e76-c9a9-4d69-9926-8fd3a4f3bf6e.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.287Z",
+                "MediaKey": "6419ef1e8a120a57724c6d6b"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 6,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/fece2d8f-817b-4030-8c6c-2c13ff0d4ce7.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.277Z",
+                "MediaKey": "6419ef1e8a120a57724c6d6c"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 7,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/5e6de939-8cd1-4f3e-ab91-d54e4e996ce5.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.290Z",
+                "MediaKey": "6419ef1e8a120a57724c6d6d"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 8,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/7cf8fb2f-06a4-4df5-9950-444cd34dfb4b.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.301Z",
+                "MediaKey": "6419ef1e8a120a57724c6d6e"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 9,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/9888ddf5-4d7c-4f2c-8830-f38f853bd927.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.305Z",
+                "MediaKey": "6419ef1e8a120a57724c6d6f"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 10,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/9c8da273-e8b2-4782-97b0-acf3a54a0d9a.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.279Z",
+                "MediaKey": "6419ef1e8a120a57724c6d70"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 11,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/0c48066c-cf1c-4a0b-8771-77b84b68a069.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.265Z",
+                "MediaKey": "6419ef1e8a120a57724c6d71"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 12,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/227ab635-9450-45fc-9394-79c099567b4e.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.282Z",
+                "MediaKey": "6419ef1e8a120a57724c6d72"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 13,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/76d8ce33-e5c3-453e-b284-da4d363a5a8c.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.365Z",
+                "MediaKey": "6419ef1e8a120a57724c6d73"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 14,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/a5b42340-8dba-4402-b385-4f682ff598dd.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.349Z",
+                "MediaKey": "6419ef1e8a120a57724c6d74"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 15,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/b68a1109-d21e-4fe8-91e8-e64e1b41a2dd.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.292Z",
+                "MediaKey": "6419ef1e8a120a57724c6d75"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 16,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/fca1957d-6041-4f16-80b9-7a1efa3c8333.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.289Z",
+                "MediaKey": "6419ef1e8a120a57724c6d76"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 17,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/15260da9-6f26-4b3a-a9ee-c81218f9f828.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.262Z",
+                "MediaKey": "6419ef1e8a120a57724c6d77"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 18,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/620a0e61-139e-4e90-aef7-f13c8bccc1b6.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.258Z",
+                "MediaKey": "6419ef1e8a120a57724c6d78"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 19,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/a81f957c-725a-414d-a2a0-8921f042d6b7.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.272Z",
+                "MediaKey": "6419ef1e8a120a57724c6d79"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 20,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/a4ce8871-0998-4c19-9644-30c9b0425c8e.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.257Z",
+                "MediaKey": "6419ef1e8a120a57724c6d7a"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 21,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/49ac4d94-45f2-40b7-8fde-4e05d2debd63.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.244Z",
+                "MediaKey": "6419ef1e8a120a57724c6d7b"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 22,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/e7584ff7-bf7e-4f27-b121-91749569f52d.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.267Z",
+                "MediaKey": "6419ef1e8a120a57724c6d7c"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 23,
+                "ImageWidth": 800,
+                "ImageHeight": 1200,
+                "ImageSizeDescription": "800x1200",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/038c32ef-dd9d-4da9-8492-1e58de7c1b99.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.212Z",
+                "MediaKey": "6419ef1e8a120a57724c6d7d"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 24,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/75f513e9-0006-43b7-896b-0a7558124ff5.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.272Z",
+                "MediaKey": "6419ef1e8a120a57724c6d7e"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 25,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/e70367fa-01cc-45fa-8a7c-7129851d7463.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.431Z",
+                "MediaKey": "6419ef1e8a120a57724c6d7f"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 26,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/aeb5cac7-f99a-43d4-9a84-3f1163cdeb2f.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.300Z",
+                "MediaKey": "6419ef1e8a120a57724c6d80"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 27,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/cfc08835-c7f6-414e-a213-767ca35815ec.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.262Z",
+                "MediaKey": "6419ef1e8a120a57724c6d81"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 28,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/2ce47c09-f65f-4ce3-8403-34854bbe5960.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.252Z",
+                "MediaKey": "6419ef1e8a120a57724c6d82"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 29,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/2501d816-acf9-401b-9959-ac8c8fe3e5c4.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.244Z",
+                "MediaKey": "6419ef1e8a120a57724c6d83"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 30,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/f48904ed-0d6f-40f9-8e27-eee33716ecb9.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.304Z",
+                "MediaKey": "6419ef1e8a120a57724c6d84"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 31,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/3e93a9b0-b46a-48a2-a35d-de12278a2c51.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.252Z",
+                "MediaKey": "6419ef1e8a120a57724c6d85"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 32,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/8d70fe8e-0d47-4103-b4cc-c54a0cff7076.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.244Z",
+                "MediaKey": "6419ef1e8a120a57724c6d86"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 33,
+                "ImageWidth": 1600,
+                "ImageHeight": 1066,
+                "ImageSizeDescription": "1600x1066",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/1875efcf-5102-4355-ae59-ca70f08e407b.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.312Z",
+                "MediaKey": "6419ef1e8a120a57724c6d87"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 34,
+                "ImageWidth": 800,
+                "ImageHeight": 1200,
+                "ImageSizeDescription": "800x1200",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/a96d3609-2674-4589-9f63-cb89fbc4d888.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.322Z",
+                "MediaKey": "6419ef1e8a120a57724c6d88"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 35,
+                "ImageWidth": 799,
+                "ImageHeight": 1200,
+                "ImageSizeDescription": "799x1200",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/c83199fa-79dd-47a4-bee6-8e29e28f716d.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.233Z",
+                "MediaKey": "6419ef1e8a120a57724c6d89"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 36,
+                "ImageWidth": 800,
+                "ImageHeight": 1200,
+                "ImageSizeDescription": "800x1200",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR685926535/5c6dd677-7e93-4a4e-ac81-0850cb56482d.jpeg",
+                "MediaModificationTimestamp": "2023-03-21T17:53:34.291Z",
+                "MediaKey": "6419ef1e8a120a57724c6d8a"
+            }
+        ],
+        "PhotosCount": 37,
+        "PhotosChangeTimestamp": "2023-03-21T17:54:09.271Z",
+        "Directions": "From FL-26 E, Turn left onto County Rd 219, Turn left onto State Rte 100 W, Turn right onto Co Rd 214, Continue on Colorado Ave. Drive to S Crater Lake Cir,Turn left onto Colorado Ave, Turn left onto S Crater Lake Cir\r\n Destination will be on the left\r\n\r\n5806 S Crater Lake Cir\r\nKeystone Heights, FL 32656",
+        "Latitude": 29.782286,
+        "Longitude": -81.981072,
+        "StreetDirPrefix": "S",
+        "StreetName": "CRATER LAKE",
+        "StreetNumber": "5806",
+        "StreetSuffix": "CIRCLE",
+        "UnparsedAddress": "5806 S CRATER LAKE CIR",
+        "MlgCanView": true,
+        "MlgCanUse": [
+            "IDX"
+        ]
+    },
+    {
         "@odata.id": "https://api.mlsgrid.com/v2/Property('MFR591507434')",
         "ListingKey": "MFR591507434",
         "OriginatingSystemKey": "591507434",

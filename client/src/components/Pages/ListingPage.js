@@ -48,6 +48,18 @@ function ListingPage(){
         }
     }
 
+    function applianceList(){
+        if(listing){
+            return(listing.Appliances.map((app, i) => {
+                return(
+                    <li>
+                        {app}
+                    </li>
+                )
+            }))
+        }
+    }
+
     return(
         <div className='listingPageContainer'>
             <div className='listingTop'>
@@ -63,7 +75,16 @@ function ListingPage(){
                     <>
                         <h1>{listing.UnparsedAddress}</h1>
                         <h3>{listing.City + `, ` + listing.StateOrProvince + ` ` + listing.PostalCode}</h3>
+                        <div className='listingBtns'>
+                        <button>
+                            View On Map
+                        </button>
+                        <button>
+                            Contact Me
+                        </button>
+                        </div>
                         <h2>{`$` + Number(listing.ListPrice).toLocaleString('en')}</h2>
+                        <h3><span>{listing.BedroomsTotal}</span> Bed  <span>{listing.BathroomsTotalInteger}</span> Bath  <span>{listing.LotSizeSquareFeet}</span> sqft</h3>
                         <p>{listing.PublicRemarks}</p>
                     </>
                     }
@@ -71,8 +92,14 @@ function ListingPage(){
                 </div>
             </div>
             <div className='listingBot'>
-                <div className='botLeft'></div>
-                <div className='botRight'></div>
+                <div className='botLeft'>
+                    <span>Appliances - <ul><applianceList/></ul></span>
+                    <span>Appliances - <applianceList/></span>
+                    <span>Property Type - {listing.PropertySubType}</span>
+                </div>
+                <div className='botRight'>
+                    <span>Property Type - {listing.YearBuilt}</span>
+                </div>
             </div>
         </div>
     )
