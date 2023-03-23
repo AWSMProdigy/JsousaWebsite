@@ -14,6 +14,7 @@ catch(err){
 function ListingPage(){
     const {ListingKey} = useParams();
     const [listing, setListing] = useState();
+    const [failed, setFailed] = useState(false);
 
     useEffect(() => {
         if(!listing && window.location.href.indexOf("Residential") > -1) {
@@ -48,21 +49,28 @@ function ListingPage(){
         }
     }
 
-    function applianceList(){
+    function ApplianceList(){
         if(listing){
             return(listing.Appliances.map((app, i) => {
                 return(
                     <li>
-                        {app}
+                        {app}{i !== listing.Appliances.length - 1 && `,`}
                     </li>
                 )
             }))
         }
     }
 
+    function contactSubmit(){
+        
+    }
+
     return(
+        
         <div className='listingPageContainer'>
-            <div className='listingTop'>
+            {listing &&
+            <>
+            <div className='listingLeft'>
                 <div className='carousel'>
                     <button className='carouselButton prev' onClick={backwards}>{'\u21D0'}</button>
                     <button className='carouselButton next' onClick={forwards}>{'\u21D2'}</button>
@@ -70,38 +78,55 @@ function ListingPage(){
                         <Carousel/>
                     </ul>
                 </div>
-                <div className='listingDescription'>
-                    {listing && 
-                    <>
-                        <h1>{listing.UnparsedAddress}</h1>
-                        <h3>{listing.City + `, ` + listing.StateOrProvince + ` ` + listing.PostalCode}</h3>
-                        <div className='listingBtns'>
-                        <button>
-                            View On Map
-                        </button>
-                        <button>
-                            Contact Me
-                        </button>
-                        </div>
-                        <h2>{`$` + Number(listing.ListPrice).toLocaleString('en')}</h2>
-                        <h3><span>{listing.BedroomsTotal}</span> Bed  <span>{listing.BathroomsTotalInteger}</span> Bath  <span>{listing.LotSizeSquareFeet}</span> sqft</h3>
-                        <p>{listing.PublicRemarks}</p>
-                    </>
-                    }
-                    <p></p>
-                </div>
-            </div>
-            <div className='listingBot'>
                 <div className='botLeft'>
-                    <span>Appliances - <ul><applianceList/></ul></span>
-                    <span>Appliances - <applianceList/></span>
+                    <span>Appliances - <ul className='appList'><ApplianceList/></ul></span>
+                    <span>Year Built - {listing.YearBuilt}</span>
                     <span>Property Type - {listing.PropertySubType}</span>
-                </div>
-                <div className='botRight'>
-                    <span>Property Type - {listing.YearBuilt}</span>
+                    <span>County - {listing.CountyOrParish}</span>
                 </div>
             </div>
+            <div className='listingRight'>
+                <div className='listingDescription'>                   
+                    <h1>{listing.UnparsedAddress}</h1>
+                    <h3>{listing.City + `, ` + listing.StateOrProvince + ` ` + listing.PostalCode}</h3>
+                    <div className='listingBtns'>
+                    <button>
+                        View On Map
+                    </button>
+                    <button>
+                        Contact Me
+                    </button>
+                    </div>
+                    <h2>{`$` + Number(listing.ListPrice).toLocaleString('en')}</h2>
+                    <h3><span>{listing.BedroomsTotal}</span> Bed  <span>{listing.BathroomsTotalInteger}</span> Bath  <span>{listing.LotSizeSquareFeet}</span> sqft</h3>
+                    <p>{listing.PublicRemarks}</p>             
+                    <p></p>
+                </div>     
+                <form className='listingContact' onSubmit={contactSubmit}>
+                    <h1>Contact Me</h1>          
+                    <div>
+                        <input type="text" name='name' placeholder='Name'/>
+                        <span className={failed ? `invalid` : `valid`}>Please enter your name</span>
+                    </div>  
+                    <div>
+                        <input type="text" name='phone' placeholder='Phone'/>
+                        <span className={failed ? `invalid` : `valid`}>Please enter your name</span>
+                    </div>
+                    <div>
+                        <input type="text" name='email' placeholder='Email'/>
+                        <span className={failed ? `invalid` : `valid`}>Please enter your name</span>
+                    </div>
+                    <textarea type="text" name='message' placeholder={`I am interested in this property at ` + listing.UnparsedAddress + `.`}/>
+                    <button>
+                        Contact Me
+                    </button>
+                    <img alt="headshot"src={require("../../images/Jorge.jpg")}/>
+                </form>    
+            </div>
+            </>
+            }
         </div>
+        
     )
 }
 
