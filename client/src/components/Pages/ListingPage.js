@@ -2,20 +2,36 @@ import React, { useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBath, faBed, faSquare } from '@fortawesome/free-solid-svg-icons'
+import Carousel from 'react-multi-carousel';
+import "react-multi-carousel/lib/styles.css";
 import CardItem from '../CardItem';
 let landListings;
 let houseListings;
-try{
-    landListings = require('../../landListings.json');
-    houseListings = require('../../houseListings.json');
-}
-catch(err){
-    console.log(err)
-}
+
 
 function ListingPage(){
-    const {ListingKey} = useParams();
-    const [listing, setListing] = useState();
+    const responsive = {
+        superLargeDesktop: {
+          // the naming can be any, depends on you.
+          breakpoint: { max: 4000, min: 3000 },
+          items: 5
+        },
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 3
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 2
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1
+        }
+      };
+    let listingKey = useParams();
+    const [listing, setListing] = useState()
+    
     const [formState, setFormState] = useState({
         failedName: false,
         failedEmail: false,
@@ -24,12 +40,16 @@ function ListingPage(){
     })
     const [formFinished, setForm] = useState(false);
 
+
     useEffect(() => {
-        if(!listing && window.location.href.indexOf("Residential") > -1) {
-            setListing(houseListings.find(item => item.ListingKey === ListingKey));
-        }
-        else if(!listing){
-            setListing(landListings.find(item => item.ListingKey === ListingKey));
+        if(!listing){
+            try{
+                fetch("/api/listings/MFR681697741")
+                .then((result) => result.json()).then((data) => setListing(data))
+            }
+            catch(err){
+                console.log(err)
+            }
         }
     }, [])
 
@@ -45,13 +65,15 @@ function ListingPage(){
         setIndex(index === listing.Media.length - 1 ? 0 : index + 1)
     }
 
-    function Carousel(){
+    function CarouselItems(){
         if(listing){
+            console.log(listing);
             return(listing.Media.map((image, i) => {
                 return(
-                    <li className={index === i ? 'slide-active' : 'slide'}>
-                        <img alt={listing.UnparsedAddress} src={"https://d190pq94iryepm.cloudfront.net" + image.MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')}></img>
-                    </li>
+                    // <li className={index === i ? 'slide-active' : 'slide'}>
+                    //     <img alt={listing.UnparsedAddress} src={"https://d190pq94iryepm.cloudfront.net" + image.MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')}></img>
+                    // </li>
+                    <div><img alt={listing.UnparsedAddress} src={"https://d190pq94iryepm.cloudfront.net" + image.MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')}></img></div>
                 )
             }))
         }
@@ -97,14 +119,16 @@ function ListingPage(){
         <div className='listingPageContainer'>
             {listing &&
             <>
+            <Carousel responsive={responsive}>
+            <div><img alt={listing.UnparsedAddress} src={"https://d190pq94iryepm.cloudfront.net" + listing.Media[0].MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')}></img></div>
+            <div><img alt={listing.UnparsedAddress} src={"https://d190pq94iryepm.cloudfront.net" + listing.Media[0].MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')}></img></div>
+            <div><img alt={listing.UnparsedAddress} src={"https://d190pq94iryepm.cloudfront.net" + listing.Media[0].MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')}></img></div>
+            <div><img alt={listing.UnparsedAddress} src={"https://d190pq94iryepm.cloudfront.net" + listing.Media[0].MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')}></img></div>
+                <div>Item 2</div>
+                <div>Item 3</div>
+                <div>Item 4</div>
+            </Carousel>
             <div className='listingLeft'>
-                <div className='carousel'>
-                    <button className='carouselButton prev' onClick={backwards}>{'\u21D0'}</button>
-                    <button className='carouselButton next' onClick={forwards}>{'\u21D2'}</button>
-                    <ul>      
-                        <Carousel/>
-                    </ul>
-                </div>
                 <div className='listingDescription'>     
                     <div className='listingDescriptionTitle'>
                         <div>

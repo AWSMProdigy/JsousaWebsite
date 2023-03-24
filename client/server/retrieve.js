@@ -48,27 +48,34 @@ async function gatherListings(){
         })
         .catch(err => console.log(err))
     }
-    let houseArray = [];
-    for(let i = 0; i < landArray.length; i++){
-        if(landArray[i].PropertyType === "Residential"){
-            houseArray.push(landArray[i]);
-            landArray.splice(i, 1);
-        }
-    }
-
-    fs.writeFile("../src/landListings.json", JSON.stringify(landArray.reverse(), null, 4), 'utf8', function(err){
+    fs.writeFile("./listings.json", JSON.stringify(landArray.reverse(), null, 4), 'utf8', function(err){
         if(err){
             return console.log(err)
         }
         console.log("Land listings written to json file")
     });
 
-    fs.writeFile("../src/houseListings.json", JSON.stringify(houseArray.reverse(), null, 4), 'utf8', function(err){
-        if(err){
-            return console.log(err)
-        }
-        console.log("Listings written to json file")
-    })
+    // let houseArray = [];
+    // for(let i = 0; i < landArray.length; i++){
+    //     if(landArray[i].PropertyType === "Residential"){
+    //         houseArray.push(landArray[i]);
+    //         landArray.splice(i, 1);
+    //     }
+    // }
+
+    // fs.writeFile("./landListings.json", JSON.stringify(landArray.reverse(), null, 4), 'utf8', function(err){
+    //     if(err){
+    //         return console.log(err)
+    //     }
+    //     console.log("Land listings written to json file")
+    // });
+
+    // fs.writeFile("./houseListings.json", JSON.stringify(houseArray.reverse(), null, 4), 'utf8', function(err){
+    //     if(err){
+    //         return console.log(err)
+    //     }
+    //     console.log("Listings written to json file")
+    // })
 }
 
 gatherListings();
