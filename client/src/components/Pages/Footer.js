@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { Button } from '../Button'
 // import './Footer.css'
 import { Link } from 'react-router-dom'
@@ -7,50 +9,32 @@ import { Link } from 'react-router-dom'
 function Footer() {
     return (
         <div className='footer-container'>
-            <div className="footer-links">
-                <div className="footer-link-wrapper">
-                    <div className="footer-link-items">
-                        <h2>About Us</h2>
-                        <Link to='/About'>How it works</Link>
-                        <Link to='/About'>Testimonials</Link>
-                        <Link to='/About'>Testimonials</Link>
-                        <Link to='/About'>Testimonials</Link>
-                        <Link to='/About'>Testimonials</Link>
-                    </div>
-                    
-                </div>
-                <div className="footer-link-wrapper">
-                    <div className="footer-link-items">
-                        <h2>About Us</h2>
-                        <Link to='/About'>How it works</Link>
-                        <Link to='/About'>Testimonials</Link>
-                        <Link to='/About'>Testimonials</Link>
-                        <Link to='/About'>Testimonials</Link>
-                        <Link to='/About'>Testimonials</Link>
-                    </div>
-                </div>
+            <div className="socialIcons">  
+                <i>
+                    <FontAwesomeIcon icon={faFacebook}/>     
+                </i>
+                <i id="instaI">
+                    <FontAwesomeIcon icon={faInstagram}/>     
+                </i>
+                <i id="twitI">
+                    <FontAwesomeIcon icon={faTwitter}/>     
+                </i>
+                <i id="linkedI">
+                    <FontAwesomeIcon icon={faLinkedin}/>     
+                </i>
             </div>
-            <section className="social-media">
-                <div className="social-media-wrap">
-                    <div className="footer-logo">
-                        <Link className="social-logo" to="/">
-                            Jorge Sousa
-                        </Link>
-                    </div>
-                    <small className='website-rights'>JSousa INC</small>
-                    <div className="social-icons">
-                        <Link className="social-icon-link facebook" to="/" target="_blank" aria-label='Facebook'>
-                            <i className="fab fa-facebook-f"/>
-                        </Link>
-                        <Link className="social-icon-link facebook" to="/" target="_blank" aria-label='Facebook'>
-                            <i className="fab fa-facebook-f"/>
-                        </Link>
-                        <Link className="social-icon-link facebook" to="/" target="_blank" aria-label='Facebook'>
-                            <i className="fab fa-facebook-f"/>
-                        </Link>
-                    </div>
-                </div>
-            </section>
+            <div className='footerLinks'>
+                <Link to='/'>Home</Link>
+                <div className='vl'></div>
+                <Link to='/About'>About</Link>
+                <div className='vl'></div>
+                <Link to='/Listings'>Listings</Link>
+            </div>
+            <div>
+                <Link>
+                    Contact Me
+                </Link>
+            </div>
         </div>
     )
 }

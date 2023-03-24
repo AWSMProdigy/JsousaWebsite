@@ -1,5 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBath, faBed, faSquare } from '@fortawesome/free-solid-svg-icons'
 import CardItem from '../CardItem';
 let landListings;
 let houseListings;
@@ -14,7 +16,13 @@ catch(err){
 function ListingPage(){
     const {ListingKey} = useParams();
     const [listing, setListing] = useState();
-    const [failed, setFailed] = useState(false);
+    const [formState, setFormState] = useState({
+        failedName: false,
+        failedEmail: false,
+        failedPhone: false,
+        failedComment: false
+    })
+    const [formFinished, setForm] = useState(false);
 
     useEffect(() => {
         if(!listing && window.location.href.indexOf("Residential") > -1) {
@@ -61,8 +69,27 @@ function ListingPage(){
         }
     }
 
-    function contactSubmit(){
-        
+    function contactSubmit(e){
+        e.preventDefault();
+        let tempState = {
+            failedName: false,
+            failedEmail: false,
+            failedPhone: false,
+            failedComment: false
+        }
+        if(e.target[0].value === ""){
+            tempState.failedName = true;
+        }
+        if(e.target[1].value === ""){
+            tempState.failedPhone = true;
+        }
+        if(e.target[2].value === ""){
+            tempState.failedEmail = true;
+        }
+        if(e.target[3].value === ""){
+            tempState.failedComment = true;
+        }
+        setFormState(tempState);     
     }
 
     return(
@@ -78,51 +105,64 @@ function ListingPage(){
                         <Carousel/>
                     </ul>
                 </div>
-                <div className='botLeft'>
+                <div className='listingDescription'>     
+                    <div className='listingDescriptionTitle'>
+                        <div>
+                            <h1>{listing.UnparsedAddress}</h1>
+                            <h3 id='listingCityCode'>{listing.City + `, ` + listing.StateOrProvince + ` ` + listing.PostalCode}</h3>
+                        </div>
+                        <div className='statWithIcon'>
+                            <div>
+                                <FontAwesomeIcon icon={faBed}/>
+                                <h3><span>{listing.BedroomsTotal}</span> Bed  </h3>
+                            </div>
+                            <div>
+                                <FontAwesomeIcon icon={faBath}/>
+                                <h3><span>{listing.BathroomsTotalInteger}</span> Bath  </h3>                               
+                            </div>
+                            <div>
+                                <FontAwesomeIcon icon={faSquare}/>
+                                <h3><span>{listing.LotSizeSquareFeet}</span> sqft  </h3>
+                            </div>
+                        </div>
+                        <div style={{'visibility': 'hidden'}}>
+                            <div>
+                                <h1>{listing.UnparsedAddress}</h1>
+                                <h3 id='listingCityCode'>{listing.City + `, ` + listing.StateOrProvince + ` ` + listing.PostalCode}</h3>
+                            </div>
+                        </div>
+                    </div>              
+                    <h2>{`$` + Number(listing.ListPrice).toLocaleString('en')}</h2>
+                    <p>{listing.PublicRemarks}</p>      
                     <span>Appliances - <ul className='appList'><ApplianceList/></ul></span>
                     <span>Year Built - {listing.YearBuilt}</span>
                     <span>Property Type - {listing.PropertySubType}</span>
-                    <span>County - {listing.CountyOrParish}</span>
+                    <span>County - {listing.CountyOrParish}</span>       
+                </div> 
+            </div>         
+            <form className='listingContact' onSubmit={contactSubmit}>
+                <h1>Contact Me</h1>          
+                <div>
+                    <input type="text" name='name' placeholder='Name'/>
+                    <span className={formState.failedName ? `invalid` : `valid`}>Please enter your name</span>
+                </div>  
+                <div>
+                    <input type="text" name='phone' placeholder='Phone'/>
+                    <span className={formState.failedPhone ? `invalid` : `valid`}>Please enter your phone</span>
                 </div>
-            </div>
-            <div className='listingRight'>
-                <div className='listingDescription'>                   
-                    <h1>{listing.UnparsedAddress}</h1>
-                    <h3>{listing.City + `, ` + listing.StateOrProvince + ` ` + listing.PostalCode}</h3>
-                    <div className='listingBtns'>
-                    <button>
-                        View On Map
-                    </button>
-                    <button>
-                        Contact Me
-                    </button>
-                    </div>
-                    <h2>{`$` + Number(listing.ListPrice).toLocaleString('en')}</h2>
-                    <h3><span>{listing.BedroomsTotal}</span> Bed  <span>{listing.BathroomsTotalInteger}</span> Bath  <span>{listing.LotSizeSquareFeet}</span> sqft</h3>
-                    <p>{listing.PublicRemarks}</p>             
-                    <p></p>
-                </div>     
-                <form className='listingContact' onSubmit={contactSubmit}>
-                    <h1>Contact Me</h1>          
-                    <div>
-                        <input type="text" name='name' placeholder='Name'/>
-                        <span className={failed ? `invalid` : `valid`}>Please enter your name</span>
-                    </div>  
-                    <div>
-                        <input type="text" name='phone' placeholder='Phone'/>
-                        <span className={failed ? `invalid` : `valid`}>Please enter your name</span>
-                    </div>
-                    <div>
-                        <input type="text" name='email' placeholder='Email'/>
-                        <span className={failed ? `invalid` : `valid`}>Please enter your name</span>
-                    </div>
+                <div>
+                    <input type="text" name='email' placeholder='Email'/>
+                    <span className={formState.failedEmail ? `invalid` : `valid`}>Please enter your email</span>
+                </div>
+                <div>
                     <textarea type="text" name='message' placeholder={`I am interested in this property at ` + listing.UnparsedAddress + `.`}/>
-                    <button>
-                        Contact Me
-                    </button>
-                    <img alt="headshot"src={require("../../images/Jorge.jpg")}/>
-                </form>    
-            </div>
+                    <span className={formState.failedComment ? `invalid` : `valid`}>Please enter a message</span>
+                </div>
+                <button>
+                    Contact Me
+                </button>
+                <img alt="headshot"src={require("../../images/Jorge.jpg")}/>
+            </form>              
             </>
             }
         </div>
