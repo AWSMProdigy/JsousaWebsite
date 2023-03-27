@@ -481,60 +481,38 @@
   background-color: #ebebeb;
 }
 
-.listingLeft{
+.listingBot{
   display: flex;
   margin: 10px;
-  flex-direction: column;
-  width: 70%;
-}
-
-
-.carousel{
-  height: auto;
-  position: relative;
-  padding: 10px;
+  flex-direction: row;
   width: 100%;
 }
 
-.carousel ul {
+.carouselImg{
   height: 100%;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  object-fit: fill;
+  border: #0c2e53 3px solid;
 }
 
-.slide{
-  position: absolute;
+.react-multi-carousel-list {
+  max-height: 600px;
 }
 
-.slide, .slide-active{
-  opacity: 0;
-  transition-duration: 0.5s ease;
-  width: 100%;
+.react-multi-carousel-track{
+  max-height: 600px;
 }
 
-.slide img, .slide-active img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1.6 / 1;
-  object-fit: cover;
-  object-position: center
+.react-multiple-carousel__arrow{
+  background-color: #0c2e53;
 }
 
-.slide-active{
-  opacity: 1;
-  border: #69beff 2px solid;
+.react-multiple-carousel__arrow--right {
+  z-index: 1;
 }
 
-.carouselButton:hover{
-  color: white;
-}
-
-.carouselButton{
-  position: absolute;
-  top: 50%;
-  z-index: 2;
+.react-multiple-carousel__arrow--left {
+  z-index: 1;
 }
 
 .next{
@@ -546,12 +524,14 @@
 }
 
 .listingDescription{
+  width: 70%;
   text-align: left;
   margin-left: 10px;
   margin-top: 20px;
   padding: 5px;
   border-radius: 5px;
   background-color: white;
+  justify-content: space-between;
   border: #0c2e53 solid 2px;
 }
 
@@ -560,6 +540,23 @@
   flex-direction: row;
   justify-content: space-between;
   flex: 1 1 0px;
+}
+
+.listingDescriptionDetails{
+  display: flex;
+  justify-content: space-between;
+}
+
+.listingDetail{
+  display: flex;
+  justify-content: space-between;
+}
+
+.spacer{
+  flex-grow: 1;
+  height: 2px;
+  margin: 10px 10px;
+  border-top: 2px dotted #747474;
 }
 
 .listingDescription h1{
@@ -635,29 +632,38 @@
 }
 
 .listingContact{
-  visibility: hidden;
-  right: 5%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 8px;
-  margin: 5vw auto;
+  margin: 0 auto;
   display: flex;
-  position: fixed;
   flex-direction: column;
   text-align: center;
   justify-content: space-evenly;
-  height: 75vh;
   border: 1px solid grey;
   width: 20%;
   z-index: 99;
+  margin-top: 20px auto 0;
+  position: fixed;
+  right: 4%;
+  bottom: 0.5%;
+  height: 50%;
 }
 
 .listingContact h1{
-  padding-bottom: 10px;
   border-bottom: 2px solid grey;
+  background-color: #0c2e53;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 5px;
+}
+
+.listingContact * {
+  flex: 1 1 auto;
 }
 
 .listingContact input, .listingContact textarea{
   font-size: 16px;
+  line-height: 20px;
   width: 80%;
   background-color: rgb(246, 246, 250);
   border-radius: 4px;
@@ -671,7 +677,7 @@
 
 
 .listingContact button{
-  font-size: 16px;
+  font-size: 24px;
   background-color: #0c2e53;
   color: white;
   width: 80%;
@@ -681,9 +687,9 @@
 
 .listingContact img{
   border-radius: 50%;
-  width: 70%;
+  width: 55%;
   height: auto;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .valid{
@@ -696,8 +702,10 @@
 }
 
 
-@media screen and (max-width: 960px) {
-   
+@media screen and (max-width: 1024px) {
+   .listingBot{
+      flex-direction: column;
+   }
 }
 
 @media screen and (max-width: 768px) {

@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBath, faBed, faSquare } from '@fortawesome/free-solid-svg-icons'
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
+import Jorge from '../../images/Jorge.jpg'
 import CardItem from '../CardItem';
 let landListings;
 let houseListings;
@@ -29,8 +30,8 @@ function ListingPage(){
           items: 1
         }
       };
-    let listingKey = useParams();
     const [listing, setListing] = useState()
+    const params = useParams();
     
     const [formState, setFormState] = useState({
         failedName: false,
@@ -43,8 +44,9 @@ function ListingPage(){
 
     useEffect(() => {
         if(!listing){
+            console.log("api/listings/" + params.ListingKey)
             try{
-                fetch("/api/listings/MFR681697741")
+                fetch("/api/listings/" + params.ListingKey)
                 .then((result) => result.json()).then((data) => setListing(data))
             }
             catch(err){
@@ -70,9 +72,6 @@ function ListingPage(){
             console.log(listing);
             return(listing.Media.map((image, i) => {
                 return(
-                    // <li className={index === i ? 'slide-active' : 'slide'}>
-                    //     <img alt={listing.UnparsedAddress} src={"https://d190pq94iryepm.cloudfront.net" + image.MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')}></img>
-                    // </li>
                     <div><img alt={listing.UnparsedAddress} src={"https://d190pq94iryepm.cloudfront.net" + image.MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')}></img></div>
                 )
             }))
@@ -85,6 +84,18 @@ function ListingPage(){
                 return(
                     <li>
                         {app}{i !== listing.Appliances.length - 1 && `,`}
+                    </li>
+                )
+            }))
+        }
+    }
+
+    function UtilitiesList(){
+        if(listing){
+            return(listing.Utilities.map((app, i) => {
+                return(
+                    <li>
+                        {app}{i !== listing.Utilities.length - 1 && `,`}
                     </li>
                 )
             }))
@@ -119,16 +130,16 @@ function ListingPage(){
         <div className='listingPageContainer'>
             {listing &&
             <>
-            <Carousel responsive={responsive}>
-            <div><img alt={listing.UnparsedAddress} src={"https://d190pq94iryepm.cloudfront.net" + listing.Media[0].MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')}></img></div>
-            <div><img alt={listing.UnparsedAddress} src={"https://d190pq94iryepm.cloudfront.net" + listing.Media[0].MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')}></img></div>
-            <div><img alt={listing.UnparsedAddress} src={"https://d190pq94iryepm.cloudfront.net" + listing.Media[0].MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')}></img></div>
-            <div><img alt={listing.UnparsedAddress} src={"https://d190pq94iryepm.cloudfront.net" + listing.Media[0].MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')}></img></div>
-                <div>Item 2</div>
-                <div>Item 3</div>
-                <div>Item 4</div>
+            <Carousel responsive={responsive} showDots={true} draggable={false}>
+                {listing &&
+                (listing.Media.map((image, i) => {
+                return(
+                    <div style={{'height': '100%'}}><img className='carouselImg' alt={listing.UnparsedAddress} src={"https://d190pq94iryepm.cloudfront.net" + image.MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')}></img></div>
+                )
+            }))
+        }
             </Carousel>
-            <div className='listingLeft'>
+            <div className='listingBot'>
                 <div className='listingDescription'>     
                     <div className='listingDescriptionTitle'>
                         <div>
@@ -155,38 +166,82 @@ function ListingPage(){
                                 <h3 id='listingCityCode'>{listing.City + `, ` + listing.StateOrProvince + ` ` + listing.PostalCode}</h3>
                             </div>
                         </div>
-                    </div>              
+                    </div>             
                     <h2>{`$` + Number(listing.ListPrice).toLocaleString('en')}</h2>
                     <p>{listing.PublicRemarks}</p>      
-                    <span>Appliances - <ul className='appList'><ApplianceList/></ul></span>
-                    <span>Year Built - {listing.YearBuilt}</span>
-                    <span>Property Type - {listing.PropertySubType}</span>
-                    <span>County - {listing.CountyOrParish}</span>       
+                    <hr style={{'width': '98%', 'border-bottom': '2px solid #0c2e53', 'margin': '0 auto'}}></hr>
+                    <div className='listingDescriptionDetails'>
+                        <div style={{'width': '49%'}}>
+                            <div className='listingDetail'>
+                                <span>Appliances -</span>
+                                <div className='spacer'></div>
+                                <ul className='appList'><ApplianceList/></ul>
+                            </div>
+                            <div className='listingDetail'>
+                                <span>Year Built -</span>
+                                <div className='spacer'></div>
+                                <span>{listing.YearBuilt}</span>
+                            </div>
+                            <div className='listingDetail'>
+                                <span>Property Type -</span>
+                                <div className='spacer'></div>
+                                <span>{listing.PropertySubType}</span>
+                            </div>
+                            <div className='listingDetail'>
+                                <span>County -</span> 
+                                <div className='spacer'></div>
+                                <span>{listing.CountyOrParish}</span>
+                            </div>
+                        </div>
+                        <vr style={{'border-left': '2px solid #0c2e53', 'margin-top': '5px'}}></vr>
+                        <div style={{'width': '49%'}}>
+                            <div className='listingDetail'>
+                                <span>Utilities -</span> 
+                                <div className='spacer'></div>
+                                <ul className='appList'><UtilitiesList/></ul>
+                            </div>
+                            <div className='listingDetail'>
+                                <span>Building sqft -</span>
+                                <div className='spacer'></div>
+                                <span>{listing.BuildingAreaTotal}</span>
+                            </div>
+                            <div className='listingDetail'>
+                                <span>Days On Market -</span>
+                                <div className='spacer'></div>
+                                <span>{listing.CumulativeDaysOnMarket}</span>
+                            </div>
+                            <div className='listingDetail'>
+                                <span>MLS Status -</span>
+                                <div className='spacer'></div>
+                                <ul className='appList'>For Sale</ul>
+                            </div>
+                        </div>
+                    </div>       
                 </div> 
-            </div>         
-            <form className='listingContact' onSubmit={contactSubmit}>
-                <h1>Contact Me</h1>          
-                <div>
-                    <input type="text" name='name' placeholder='Name'/>
-                    <span className={formState.failedName ? `invalid` : `valid`}>Please enter your name</span>
-                </div>  
-                <div>
-                    <input type="text" name='phone' placeholder='Phone'/>
-                    <span className={formState.failedPhone ? `invalid` : `valid`}>Please enter your phone</span>
-                </div>
-                <div>
-                    <input type="text" name='email' placeholder='Email'/>
-                    <span className={formState.failedEmail ? `invalid` : `valid`}>Please enter your email</span>
-                </div>
-                <div>
-                    <textarea type="text" name='message' placeholder={`I am interested in this property at ` + listing.UnparsedAddress + `.`}/>
-                    <span className={formState.failedComment ? `invalid` : `valid`}>Please enter a message</span>
-                </div>
-                <button>
-                    Contact Me
-                </button>
-                <img alt="headshot"src={require("../../images/Jorge.jpg")}/>
-            </form>              
+                <form className='listingContact' onSubmit={contactSubmit}>
+                    <h1>Contact Me</h1>          
+                    <div>
+                        <input type="text" name='name' placeholder='Name'/>
+                        <span className={formState.failedName ? `invalid` : `valid`}>Please enter your name</span>
+                    </div>  
+                    <div>
+                        <input type="text" name='phone' placeholder='Phone'/>
+                        <span className={formState.failedPhone ? `invalid` : `valid`}>Please enter your phone</span>
+                    </div>
+                    <div>
+                        <input type="text" name='email' placeholder='Email'/>
+                        <span className={formState.failedEmail ? `invalid` : `valid`}>Please enter your email</span>
+                    </div>
+                    <div>
+                        <textarea type="text" name='message' placeholder={`I am interested in this property at ` + listing.UnparsedAddress + `.`}/>
+                        <span className={formState.failedComment ? `invalid` : `valid`}>Please enter a message</span>
+                    </div>
+                    <button>
+                        I'm interested
+                    </button>
+                    <img alt="headshot"src={Jorge}/>
+                </form>     
+            </div>                  
             </>
             }
         </div>

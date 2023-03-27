@@ -7,10 +7,27 @@ app.use(express.static("public"));
 //Set the port that you want the server to run on
 const port = process.env.PORT || 8080;
 var listingsFile = require('./listings.json');
+var houseFile = require('./houseListings.json');
+var landFile = require('./landListings.json');
+
+let houseData = houseFile;
+let landData = landFile;
 
 
 app.get('/api', (req, res) => {
   res.send("Api is working!");
+})
+
+app.get('/api/featured', (req, res) => {
+  try{
+    let tempData = [];
+    tempData = tempData.concat(houseData.slice(0, (Math.min(houseData.length, 10))));
+    tempData = tempData.concat(landData.slice(0, (Math.min(landData.length, 10))));
+    res.send(tempData);
+  }
+  catch(err){
+    res.send(err);
+  }
 })
 
 app.get('/api/listings', (req, res) => {
@@ -20,6 +37,18 @@ app.get('/api/listings', (req, res) => {
     catch(err){
       res.send(err)
     }
+})
+
+app.get('/api/county/:county', (req, res) =>{
+  try{
+    let tempData = [];
+    tempData = tempData.concat(houseData.filter(listing => listing.CountyOrParish === req.params.county));
+    tempData = tempData.concat(landData.filter(listing => listing.CountyOrParish === req.params.county));
+    res.send(tempData);
+  }
+  catch(err){
+    res.send(err)
+  }
 })
 
 app.get('/api/listings/:listingID', (req, res) => {
