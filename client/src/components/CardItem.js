@@ -5,7 +5,7 @@ function CardItem(props) {
     return (
         <>
             <li className="cards__item">
-                <Link className="cards__item__link" to={props.PropertyType + '/' + props.listingKey}>
+                <Link className="cards__item__link" to={'/' + props.county + '/' + props.PropertyType + '/' + props.listingKey}>
                     <figure className="cards__item__pic-wrap" data-category={props.address}>
                         <img src={props.src} alt="Home thumbnail" className="cards__item__img"/>
                     </figure>

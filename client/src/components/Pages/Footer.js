@@ -24,16 +24,11 @@ function Footer() {
                 </i>
             </div>
             <div className='footerLinks'>
-                <Link to='/'>Home</Link>
+                <Link style={{ 'textDecoration': 'none', 'color': '#ebebeb' }} to='/'>Home</Link>
                 <div className='vl'></div>
-                <Link to='/About'>About</Link>
+                <Link style={{ 'textDecoration': 'none', 'color': '#ebebeb' }} to='/About'>About</Link>
                 <div className='vl'></div>
-                <Link to='/Listings'>Listings</Link>
-            </div>
-            <div>
-                <Link>
-                    Contact Me
-                </Link>
+                <Link style={{ 'textDecoration': 'none', 'color': '#ebebeb' }} to='/Contact'>Contact</Link>
             </div>
         </div>
     )

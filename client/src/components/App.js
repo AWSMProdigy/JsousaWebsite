@@ -9,26 +9,32 @@ import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Footer from './Pages/Footer';
 import ListingPage from './Pages/ListingPage';
-import County from './Pages/County';
+import County from './County';
+import Search from "./Pages/Search";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 
 function App() {
     return (
       <>
+
       <React.StrictMode>
-      <Router>
-        <NavBar/>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/Listings' element={<County/>}/>
-          <Route path='/About' element={<About/>}/>
-          <Route path='/Contact' element={<Contact/>}/>
-          <Route path='/Listings/:county/Residential/:ListingKey' element={<ListingPage/>}/>
-          <Route path='/Listings/:county/Land/:ListingKey' element={<ListingPage/>}/>
-          <Route path='/Listings/:county' element={<Listings/>}/>
-        </Routes>
-        <Footer/>
-      </Router>
+      <div className="pageContainer">
+        <div className="contentWrap">
+          <Router>
+            <NavBar/>
+            <Routes>
+              <Route path='/' element={<Home/>}/>
+              <Route path='/About' element={<About/>}/>
+              <Route path='/Contact' element={<Contact/>}/>
+              <Route path='/Search/:propertyType' element={<Search/>}/>
+              <Route path='/:county/:propertyType/:ListingKey' element={<ListingPage/>}/>
+              <Route path='/:county' element={<Listings/>}/>
+            </Routes>
+            <Footer/>
+          </Router>
+        </div>
+      </div>
       </React.StrictMode>
       </>
     );

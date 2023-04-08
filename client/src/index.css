@@ -5,7 +5,14 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
   }
   
+.pageContainer{
+  position: relative;
+  min-height: 100vh;
+}
 
+.contentWrap{
+  padding-bottom: 12rem;
+}
 
 .btn {
     padding: 8px 20px;
@@ -127,7 +134,7 @@
     font-size: 12px;
     font-weight: 700;
     color: #fff;
-    background-color: #1f98f4;
+    background-color: #0c2e53;
     box-sizing: border-box;
   }
   
@@ -161,7 +168,7 @@
   .cardSpan{
     font-weight: bolder;
   }
-  
+
   @media only screen and (min-width: 1200px) {
     .content__blog__container {
       width: 84%;
@@ -171,6 +178,10 @@
   @media only screen and (min-width: 1024px) {
     .cards__items {
       display: flex;
+    }
+
+    .counties{
+      grid-template-columns: repeat(1,1fr);
     }
   }
   
@@ -189,6 +200,52 @@
     justify-content: center;
     align-items: center;
 }
+
+  #contactPageForm{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 0%;
+    border: #0c2e53 3px solid;
+    background-color: #ebebeb;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    max-width: 1000px;
+  }
+
+  .socials{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    max-width: 1000px;
+  }
+
+  .socials div{
+    flex: 1 1 auto;
+  }
+
+  .contactDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .contactDiv img{
+    width: auto;
+    border: #0c2e53 3px solid;
+    margin-bottom: 10px;
+    max-height: 500px;
+  }
+
+  .contactDiv form{
+    width: 80%;
+  }
+
+  .contactQueries{
+    display: flex;
+    flex-direction: row;
+  }
 
 .contact-subscription > p{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -234,10 +291,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 12rem;
   
 }
 
@@ -283,6 +341,10 @@
     max-width: 1000px;
     display: flex;
     justify-content: center;
+}
+
+.footerLinks *{
+  margin: 0 5px;
 }
 
 .footer-link-wrapper{
@@ -347,7 +409,7 @@
 
 .socialIcons{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     width: 30%;
 }
@@ -355,14 +417,15 @@
 
 .socialIcons i {
   padding: 20px;
+  margin: 0 5px;
   border-radius: 50%;
-  background-color: #69beff;
+  background-color: #ebebeb;
   transition: 0.2s ease;
   cursor: pointer;
 }
 
 .socialIcons svg{
-  color: white;
+  color: #0c2e53;
   transition: 0.2s ease;
   height: 2rem;
 }
@@ -372,12 +435,31 @@
 }
 
 .socialIcons i:hover svg{
-  color: #69beff;
+  color: #ebebeb;
 }
 
 .vl{
-  border-left: 6px solid #69beff;
+  border-left: 1px solid #69beff;
   height: 100%;
+}
+
+.pageButtonContainer{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.pageButton{
+  color: #0c2e53;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.disabled{
+  pointer-events: none;
+  color: #ebebeb;
+  margin: 0 5px;
+
 }
 
 
@@ -401,6 +483,55 @@
     .social-media-wrap{
         flex-direction: column;
     }
+
+    .listingSearchQueries{
+      flex-direction: column !important;
+    }
+
+    .About-container{
+      flex-direction: column;
+    }
+
+    .listingBot{
+      flex-direction: column !important;
+      width: auto !important;
+   }
+
+   .listingContact{
+    position: relative !important;
+    width: 50% !important;
+    min-width: 350px;
+    right: 0% !important;
+   }
+
+   .listingDescription{
+    width: auto !important;
+   }
+
+   #contactPageForm{
+      min-width: 90%;
+   }
+
+   .contactDiv{
+    flex-direction: column;
+  }
+
+  .contactDiv img{
+    max-height: 360px;
+    margin: 10px auto;
+  }
+
+  .contactDiv form{
+    min-width: 600px;
+  }
+
+  .socials{
+    flex-direction: column;
+  }
+
+  .contactQueries{
+    flex-direction: column;
+  }
 }
 
  video {
@@ -412,10 +543,10 @@
 } 
 
 .platBG{
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/Platinum.jpg');
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/Platinum.webp');
 }
 
-.parallax{
+.parallaxHome{
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -446,7 +577,7 @@
 .aboutHero img{
   position: relative;
   object-fit: cover;
-  height: 500px;
+  height: 800px;
   width: 100%;
 }
 
@@ -468,11 +599,12 @@
 }
 
 .hero > p {
-  margin-top: 8px; 
+  margin-top: 8px;
   color: rgb(255, 255, 255);
   font-size: 32px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .listingPageContainer{
@@ -513,6 +645,10 @@
 
 .react-multiple-carousel__arrow--left {
   z-index: 1;
+}
+
+.react-multi-carousel-dot button{
+  margin-bottom: 10px;
 }
 
 .next{
@@ -631,6 +767,11 @@
   padding-left: 12px;
 }
 
+.listingSearch{
+  display: flex;
+  flex-direction: row;
+}
+
 .listingContact{
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
@@ -699,14 +840,9 @@
 .invalid{
   display: block;
   color: red;
+  width: 80%;
 }
 
-
-@media screen and (max-width: 1024px) {
-   .listingBot{
-      flex-direction: column;
-   }
-}
 
 @media screen and (max-width: 768px) {
     .btn-mobile{
@@ -727,7 +863,7 @@
 
 .navbar {
     background: #0c2e53;
-    height: 80px;
+    min-height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -735,13 +871,15 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    height: auto;
   }
   
   .navbar-container {
+    min-height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: auto;
     width: 100%;
   }
   
@@ -790,7 +928,7 @@
     transition: all 0.2s ease-out;
   }
   
-  .fa-bars {
+  .fa-bars, .fa-xmark {
     color: #fff;
   }
   
@@ -819,6 +957,33 @@
     margin: 0 auto;
   }
 
+  .counties{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px auto;
+  }
+
+  .county{
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .county .cards__item__pic-wrap::after {
+    margin: 0 auto;
+    background-color: #0c2e535b;
+  }
+
+  .county h1{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+  }
+
   @media screen and (max-width: 1200px) {
     .featuredHomes{
       grid-template-columns: 300px 300px 300px;
@@ -826,13 +991,17 @@
   }
 
   @media screen and (max-width: 900px) {
-    .featuredHomes{
+    .featuredHomes, .counties{
       grid-template-columns: 1fr 1fr;
     }
   }
 
   @media screen and (max-width: 600px) {
     .featuredHomes{
+      grid-template-columns: 1fr;
+    }
+
+    .counties{
       grid-template-columns: 1fr;
     }
   }
@@ -929,6 +1098,10 @@
     .featuredHomes > * {
       flex-basis: 34%;
     }
+
+    .About-text-container img{
+      width: 100%;
+    }
   }
 
   @media ( max-width: 600px) {
@@ -964,7 +1137,7 @@
 
   .About-container{
     justify-content: center;
-    max-width: 85%;
+    max-width: 80%;
     height: 100%;
     display: flex;
     margin: 0 auto;
@@ -975,11 +1148,15 @@
     width: 40%;
     height: auto;
     border: #69beff 3px solid;
+    max-height: 500px;
   }
 
   .About-text{
     max-width: 90%;
     height: auto;
+    font-size: 18px;
+    line-height: 2;
+    color: black;
   }
 
   .About-text-container{
@@ -990,6 +1167,40 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+  }
+
+  .About-text-container h1{
+    font-size: 60px;
+  }
+
+  .reviewCarousel{
+    width: 90%;
+    border-radius: 10px;
+    background-color: #ebebeb;
+    border: 1px solid #0c2e53;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+  }
+
+  .review{
+    width: 85%;
+    padding: 20px;
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+  }
+  
+  .review h1{
+    font-size: 48px;
+    color: #0c2e53;
+    border-bottom: 1px dashed #0c2e53;
+  }
+
+  .review p{
+    font-size: 18px;
+    color: black;
+
   }
 
   .loc-container{
@@ -1014,7 +1225,7 @@
   }
 
   .loc > h3{
-    color: #1f98f4;
+    color: #0c2e53;
   }
 
   .header_search{
@@ -1022,16 +1233,67 @@
     justify-content: space-around;
   }
 
-  .homeSection{
+  .header_search h1{
+    border-bottom: 2px solid #0c2e53;
+  }
+
+  .searchSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .listingSearch{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 15px;
+    width: 100%;
+  }
+
+  .listingSearchQueries{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+  }
+
+  .listingSearchQueries div {
+    width: 100%;
+    flex: 1 1 auto;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .listingSearchQueries div * {
+    width: 100%;
+    text-align: center;
+  }
+
+  .listingSearchQueries select, .listingSearchQueries input {
+    padding: 5px;
+  }
+
+  .searchButton button {
+    color: white;
+    background-color: #242222;
+    width: 15rem;
+    cursor: pointer;
+  }
+
+  .searchSection div label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .blueBG{
-    background-color: #69beff;
+    background-color: #0c2e53;
+    color: white;
   }
 
   .homeCardContainer {
@@ -1051,6 +1313,54 @@
     padding: 10px;
     align-items: center;
     text-align: center;
+  }
+
+  .searchButtons{
+    display: flex;
+    width: 500px;
+  }
+
+  .searchButtons button{
+    flex: 1 1 0px;
+    padding: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+
+  .residential{
+    margin-right: 10px;
+  }
+
+  .land{
+    margin-left: 10px;
+  }
+
+  .searchButtons .chosen{
+    background-color: #242222;
+    color: white;
+  }
+
+  .searchButtons .unChosen{
+    background-color: #ebebeb;
+  }
+
+  .addSubtract{
+    margin: 0 !important;
+    margin-top: 10px !important;
+  }
+
+  .aboutIntro{
+    font-size: 24px;
+    line-height: 2;
+    color: #242424;
+    padding: 0 50px;
+    text-align: center;
+    background-color: #ebebeb;
+    border-bottom: 1px solid #0c2e53;
+  }
+
+  .contactQueries input, .contactQueries textarea{
+    width: 95%;
   }
 
 

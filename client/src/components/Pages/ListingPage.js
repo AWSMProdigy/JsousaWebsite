@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBath, faBed, faSquare } from '@fortawesome/free-solid-svg-icons'
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
-import Jorge from '../../images/Jorge.jpg'
+import Jorge from '../../images/Jorge.webp'
+import Platinum from '../../images/Platinum.webp'
 import CardItem from '../CardItem';
 let landListings;
 let houseListings;
@@ -32,6 +33,7 @@ function ListingPage(){
       };
     const [listing, setListing] = useState()
     const params = useParams();
+    const [isHouse, setHouse] = useState(false);
     
     const [formState, setFormState] = useState({
         failedName: false,
@@ -43,8 +45,10 @@ function ListingPage(){
 
 
     useEffect(() => {
+        if(params.propertyType === "Residential"){
+            setHouse(true);
+        }
         if(!listing){
-            console.log("api/listings/" + params.ListingKey)
             try{
                 fetch("/api/listings/" + params.ListingKey)
                 .then((result) => result.json()).then((data) => setListing(data))
@@ -57,36 +61,23 @@ function ListingPage(){
 
     
     // If residential is in the url, search only residential listings. Otherwise, search land
-    const [index, setIndex] = useState(0);
-    
-    function backwards(){
-        setIndex(index === 0 ? listing.Media.length - 1 : index - 1)
-    }
-
-    function forwards(){
-        setIndex(index === listing.Media.length - 1 ? 0 : index + 1)
-    }
-
-    function CarouselItems(){
-        if(listing){
-            console.log(listing);
-            return(listing.Media.map((image, i) => {
-                return(
-                    <div><img alt={listing.UnparsedAddress} src={"https://d190pq94iryepm.cloudfront.net" + image.MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')}></img></div>
-                )
-            }))
-        }
-    }
 
     function ApplianceList(){
-        if(listing){
-            return(listing.Appliances.map((app, i) => {
-                return(
-                    <li>
-                        {app}{i !== listing.Appliances.length - 1 && `,`}
-                    </li>
-                )
-            }))
+        if(listing && isHouse && listing.Appliances){
+            return(
+                <div className='listingDetail'>
+                    <span>Appliances -</span>
+                    <div className='spacer'></div>
+                    <ul className='appList'>{listing.Appliances.map((app, i) => {
+                        return(
+                            <li>
+                                {app}{i !== listing.Appliances.length - 1 && `,`}
+                            </li>
+                        )
+                    })}
+                    </ul>
+                </div>
+            )
         }
     }
 
@@ -102,8 +93,28 @@ function ListingPage(){
         }
     }
 
+    function LotFeatures(){
+        if(listing && !isHouse && listing.LotFeatures){
+            return(
+                <div className='listingDetail'>
+                    <span>Lot Features -</span>
+                    <div className='spacer'></div>
+                    <ul className='appList'>{listing.LotFeatures.map((app, i) => {
+                        return(
+                            <li>
+                                {app}{i !== listing.LotFeatures.length - 1 && `,`}
+                            </li>
+                        )
+                    })}
+                    </ul>
+                </div>
+            )
+        }
+    }
+
     function contactSubmit(e){
         e.preventDefault();
+        let complete = true;
         let tempState = {
             failedName: false,
             failedEmail: false,
@@ -112,19 +123,38 @@ function ListingPage(){
         }
         if(e.target[0].value === ""){
             tempState.failedName = true;
+            complete = false;
         }
         if(e.target[1].value === ""){
             tempState.failedPhone = true;
+            complete = false;
         }
         if(e.target[2].value === ""){
             tempState.failedEmail = true;
+            complete = false;
         }
         if(e.target[3].value === ""){
             tempState.failedComment = true;
+            complete = false;
         }
         setFormState(tempState);     
+        if(complete){
+            try{
+            fetch('/api/email', ({
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({name: e.target[0].value, phone: e.target[1].value, email: e.target[2].value, comment: e.target[3].value})
+            })).then(response => response.json())
+            }
+            catch(err){
+                console.log(err);
+            }
+        }
+        e.target.forEach(input => input.value = "");
+        alert("Email sent!");
     }
 
+    console.log(isHouse);
     return(
         
         <div className='listingPageContainer'>
@@ -136,8 +166,10 @@ function ListingPage(){
                 return(
                     <div style={{'height': '100%'}}><img className='carouselImg' alt={listing.UnparsedAddress} src={"https://d190pq94iryepm.cloudfront.net" + image.MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')}></img></div>
                 )
-            }))
-        }
+                }))
+                }
+                <div style={{'height': '100%'}}><img className='carouselImg' alt={'Jorge headshot'} src={Jorge}></img></div>
+                <div style={{'height': '100%'}}><img className='carouselImg' alt={'Platinum'} src={Platinum}></img></div>
             </Carousel>
             <div className='listingBot'>
                 <div className='listingDescription'>     
@@ -147,6 +179,8 @@ function ListingPage(){
                             <h3 id='listingCityCode'>{listing.City + `, ` + listing.StateOrProvince + ` ` + listing.PostalCode}</h3>
                         </div>
                         <div className='statWithIcon'>
+                            {isHouse && 
+                            <>
                             <div>
                                 <FontAwesomeIcon icon={faBed}/>
                                 <h3><span>{listing.BedroomsTotal}</span> Bed  </h3>
@@ -155,9 +189,11 @@ function ListingPage(){
                                 <FontAwesomeIcon icon={faBath}/>
                                 <h3><span>{listing.BathroomsTotalInteger}</span> Bath  </h3>                               
                             </div>
+                            </>
+                            }
                             <div>
                                 <FontAwesomeIcon icon={faSquare}/>
-                                <h3><span>{listing.LotSizeSquareFeet}</span> sqft  </h3>
+                                <h3><span>{listing.LotSizeAcres}</span> Acres  </h3>
                             </div>
                         </div>
                         <div style={{'visibility': 'hidden'}}>
@@ -172,20 +208,16 @@ function ListingPage(){
                     <hr style={{'width': '98%', 'border-bottom': '2px solid #0c2e53', 'margin': '0 auto'}}></hr>
                     <div className='listingDescriptionDetails'>
                         <div style={{'width': '49%'}}>
+                            {isHouse ? <ApplianceList/> : <LotFeatures/>}
                             <div className='listingDetail'>
-                                <span>Appliances -</span>
+                                <span>{isHouse ? 'Year Built -' : 'Water Source -'}</span>
                                 <div className='spacer'></div>
-                                <ul className='appList'><ApplianceList/></ul>
-                            </div>
-                            <div className='listingDetail'>
-                                <span>Year Built -</span>
-                                <div className='spacer'></div>
-                                <span>{listing.YearBuilt}</span>
+                                <span>{isHouse ? listing.YearBuilt : listing.WaterSource}</span>
                             </div>
                             <div className='listingDetail'>
                                 <span>Property Type -</span>
                                 <div className='spacer'></div>
-                                <span>{listing.PropertySubType}</span>
+                                <span>{isHouse ? listing.PropertySubType : listing.PropertyType}</span>
                             </div>
                             <div className='listingDetail'>
                                 <span>County -</span> 
@@ -201,9 +233,9 @@ function ListingPage(){
                                 <ul className='appList'><UtilitiesList/></ul>
                             </div>
                             <div className='listingDetail'>
-                                <span>Building sqft -</span>
+                                <span>{isHouse ? 'Building sqft -' : 'Lot Dimensions -'}</span>
                                 <div className='spacer'></div>
-                                <span>{listing.BuildingAreaTotal}</span>
+                                <span>{isHouse ? listing.LivingArea : listing.LotSizeDimensions}</span>
                             </div>
                             <div className='listingDetail'>
                                 <span>Days On Market -</span>
@@ -214,6 +246,11 @@ function ListingPage(){
                                 <span>MLS Status -</span>
                                 <div className='spacer'></div>
                                 <ul className='appList'>For Sale</ul>
+                            </div>
+                            <div className='listingDetail'>
+                                <span>Road Surface -</span>
+                                <div className='spacer'></div>
+                                <ul className='appList'>{listing.RoadSurfaceType}</ul>
                             </div>
                         </div>
                     </div>       

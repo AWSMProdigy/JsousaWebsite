@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
-import { Button } from './Button';
-// import './NavBar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 function NavBar() {
     const [click, setClick] = useState(false);
@@ -19,7 +19,9 @@ function NavBar() {
                     </Link>
                     <h1 className='tagLine'>"Let's Make The Move Together"</h1>
                     <div className='menu-icon' onClick={handleClick}>
-                        <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
+                        <i>
+                           <FontAwesomeIcon icon={click ? faXmark : faBars}/> 
+                        </i>
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
@@ -30,11 +32,6 @@ function NavBar() {
                         <li className='nav-item'>
                             <Link to='/About' className='nav-links' onClick={closeMobileMenu}>
                             About
-                            </Link>
-                        </li>
-                        <li className='nav-item'>
-                            <Link to='/Listings' className='nav-links' onClick={closeMobileMenu}>
-                                Listings
                             </Link>
                         </li>
                         <li className='nav-item'>

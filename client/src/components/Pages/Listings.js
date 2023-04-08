@@ -1,6 +1,5 @@
 import React, { useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
-import axios from 'axios';
 import CardItem from '../CardItem';
 
 function Listings() {
@@ -37,23 +36,29 @@ function Listings() {
     
     return (
         <div className='featured'>
-              <div className='header_search'>
-              <textarea style={{visibility: "hidden"}}>Search</textarea>
+            <div className='header_search'>
                 <h1>{params.county} county</h1>
-                <textarea>Search</textarea>
             </div>
+            {listings && listings.houseListings.length !== 0 &&
+            <>
             <h1>Home listings</h1>
             <div className='featuredHomes'>
-                {listings && listings.houseListings.map((listing, i) => {
-                    return <CardItem key={i} src={"https://d190pq94iryepm.cloudfront.net" + listing.Media[0].MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')} address={listing.UnparsedAddress} price={listing.ListPrice} bed={listing.BedroomsTotal} bath={listing.BathroomsTotalInteger} sqft={listing.LotSizeSquareFeet} listingKey={listing.ListingKey} PropertyType={listing.PropertyType}/>
+                {listings.houseListings.map((listing, i) => {
+                    return <CardItem key={i} src={"https://d190pq94iryepm.cloudfront.net" + listing.Media[0].MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')} address={listing.UnparsedAddress} price={listing.ListPrice} bed={listing.BedroomsTotal} bath={listing.BathroomsTotalInteger} sqft={listing.LotSizeSquareFeet} listingKey={listing.ListingKey} PropertyType={listing.PropertyType} county={listing.CountyOrParish}/>
                 })}
             </div>
+            </>
+            }
+            {listings && listings.landListings.length !== 0 &&
+            <>
             <h1>Land Listings</h1>
             <div className='featuredHomes'>
                 {listings && listings.landListings.map((listing, i) => {
-                    return <CardItem key={i} src={"https://d190pq94iryepm.cloudfront.net" + listing.Media[0].MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')} address={listing.UnparsedAddress} price={listing.ListPrice} sqft={listing.LotSizeSquareFeet} listingKey={listing.ListingKey} PropertyType={listing.PropertyType}/>
+                    return <CardItem key={i} src={"https://d190pq94iryepm.cloudfront.net" + listing.Media[0].MediaURL.replace("https://s3.amazonaws.com/mlsgrid", '')} address={listing.UnparsedAddress} price={listing.ListPrice} sqft={listing.LotSizeSquareFeet} listingKey={listing.ListingKey} PropertyType={listing.PropertyType} county={listing.CountyOrParish}/>
                 })}
             </div>
+            </>
+            }
         </div>
     );
     }
