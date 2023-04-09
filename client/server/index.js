@@ -14,9 +14,11 @@ var listingsFile = require('./listings.json');
 var houseFile = require('./houseListings.json');
 var landFile = require('./landListings.json');
 var nodemailer = require('nodemailer')
+const retrieve = require('./retrieve')
 
 let houseData = houseFile;
 let landData = landFile;
+
 
 const transporter = nodemailer.createTransport({
   host: "smtpout.secureserver.net",  

@@ -52,7 +52,7 @@ async function gatherListings(){
         if(err){
             return console.log(err)
         }
-        console.log("Land listings written to json file")
+        console.log("Listings written to json file")
     });
 
     let houseArray = [];
@@ -74,10 +74,12 @@ async function gatherListings(){
         if(err){
             return console.log(err)
         }
-        console.log("Listings written to json file")
+        console.log("House listings written to json file")
     })
 }
 
 gatherListings();
 
-module.exports = gatherListings;
+setInterval(() => gatherListings(), 900000)
+
+module.exports.gatherListings = gatherListings;
