@@ -913,6 +913,18 @@
     width: 60vw;
     justify-content: end;
   }
+
+  @media screen and (max-width: 654px){
+    .nav-menu{
+      top: 96px;
+    }
+  }
+
+  @media screen and (max-width: 498px){
+    .nav-menu{
+      top: 128px;
+    }
+  }
   
   .nav-item {
     height: 80px;
@@ -1322,6 +1334,12 @@
   .searchButtons{
     display: flex;
     width: 500px;
+  }
+
+  @media screen and (max-width: 560px){
+    .searchButtons{
+      width: 100%;
+    }
   }
 
   .searchButtons button{
