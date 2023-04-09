@@ -1,6 +1,6 @@
 const express = require('express');
 var bodyParser = require('body-parser');
-
+require('dotenv').config();
 const path = require('path');
 const app = express();
 const fs = require('fs');
@@ -32,9 +32,8 @@ const transporter = nodemailer.createTransport({
   debug: true,
      auth: {
           user: 'EmailManager@ocalalandandrealty.com',
-          pass: 'Laurie@1969',
+          pass: process.env.EMAILPASS,
        },
-  secure: true,
   });
 
 
