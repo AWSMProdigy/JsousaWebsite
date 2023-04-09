@@ -66,9 +66,11 @@ export default function About(){
                 </div>
                 <div className='review'>
                     <h1>Quinto</h1>
-                    <p>"Jorge made the process simple and easy. Very professional, great personality,
-                    honest, patience, great communication regularly through the whole process! His
-                    insight to me was extremely valuable, very helpful! I would highly recommend Jorge!"</p>
+                    <p>Jorge is an extremely knowledgable real estate agent, well versed in all aspects of
+                    the sale. Throughout the entire process, Jorge responded quickly to my calls and
+                    had answers for any concerns. He kept me updated and helped me make some
+                    major decisions. I would highly recommend Jorge Sousa to anyone looking for a
+                    competent and dedicated agent.</p>
                 </div>
             </Carousel>
         </div>
