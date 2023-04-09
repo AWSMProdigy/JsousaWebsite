@@ -916,13 +916,13 @@
 
   @media screen and (max-width: 654px){
     .nav-menu{
-      top: 96px;
+      top: 96px !important;
     }
   }
 
   @media screen and (max-width: 498px){
     .nav-menu{
-      top: 128px;
+      top: 128px !important;
     }
   }
   
@@ -1338,7 +1338,7 @@
 
   @media screen and (max-width: 560px){
     .searchButtons{
-      width: 100%;
+      width: 100% !important;
     }
   }
 
