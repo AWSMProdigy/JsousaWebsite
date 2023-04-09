@@ -11,16 +11,16 @@ function Footer() {
         <div className='footer-container'>
             <div className="socialIcons">  
                 <i>
-                    <FontAwesomeIcon icon={faFacebook}/>     
+                    <a href='https://www.facebook.com/jorge.sousa67'><FontAwesomeIcon icon={faFacebook}/></a>     
                 </i>
                 <i id="instaI">
-                    <FontAwesomeIcon icon={faInstagram}/>     
+                    <a href='https://www.instagram.com/jorgerealestatesalesagent/'><FontAwesomeIcon icon={faInstagram}/></a> 
                 </i>
                 <i id="twitI">
-                    <FontAwesomeIcon icon={faTwitter}/>     
+                    <a href='https://twitter.com/JorgeSousa2000'><FontAwesomeIcon icon={faTwitter}/></a>     
                 </i>
                 <i id="linkedI">
-                    <FontAwesomeIcon icon={faLinkedin}/>     
+                    <a href='https://www.linkedin.com/in/jorge-sousa-50b041171/'><FontAwesomeIcon icon={faLinkedin}/></a>  
                 </i>
             </div>
             <div className='footerLinks'>
