@@ -175,7 +175,7 @@ app.post('/api/email', (req, res) => {
   const {name, phone, email, comment} = req.body;
   const mail = {
     from: "EmailManager@ocalalandandrealty.com",
-    to: "Jorgesousarealtor@gmail.com",
+    to: "StraightAKyle@gmail.com",
     subject: "Listing Inquiry from " + name,
     text: "Name: " + name + "\nPhone: " + phone + "\nEmail: " + email + "\n" + comment
   }

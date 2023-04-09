@@ -51,9 +51,9 @@ export default function Contact() {
             catch(err){
                 console.log(err);
             }
+        alert("Message sent!");
+        e.target.reset();
         }
-        e.target.forEach(input => input.value = "");
-        alert("Email sent!");
         }
 
         return (

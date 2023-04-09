@@ -149,9 +149,9 @@ function ListingPage(){
             catch(err){
                 console.log(err);
             }
+        alert("Message sent!");
+        e.target.reset();
         }
-        e.target.forEach(input => input.value = "");
-        alert("Email sent!");
     }
 
     console.log(isHouse);
