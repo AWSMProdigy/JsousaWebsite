@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import CardItem from '../CardItem';
 import Featured from '../Featured';
-import SearchForm from '../searchForm';
+import SearchForm from '../SearchForm';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 

@@ -3,7 +3,7 @@ import React from 'react';
 import Featured from '../Featured';
 import County from '../County';
 import Jorge from '../../images/Jorge.webp'
-import SearchForm from '../searchForm';
+import SearchForm from '../SearchForm';
 
 function Home(){
 
