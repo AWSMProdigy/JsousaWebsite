@@ -190,7 +190,7 @@ app.post('/api/email', (req, res) => {
 
 app.get('/*', (req,res) =>{
   console.log("Server reached!")
-  res.sendFile(path.join(__dirname+'/client/build/index.html'));
+  res.sendFile(path.join(__dirname+'../build/index.html'));
 });
 
 app.use((req, res, next) => {

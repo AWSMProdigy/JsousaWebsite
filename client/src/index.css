@@ -492,6 +492,10 @@
       flex-direction: column;
     }
 
+    .About-container img{
+      width: 100%;
+    }
+
     .listingBot{
       flex-direction: column !important;
       width: auto !important;
