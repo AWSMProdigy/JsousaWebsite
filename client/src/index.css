@@ -977,7 +977,7 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
-    margin: 10px auto;
+    margin: 10px 0px auto;
   }
 
   .county{
@@ -991,7 +991,7 @@
 
   .county .cards__item__pic-wrap::after {
     margin: 0 auto;
-    background-color: #0c2e535b;
+    background-color: #0c2e53e5;
   }
 
   .county h1{
