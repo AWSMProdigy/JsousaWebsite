@@ -10,11 +10,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 //Set the port that you want the server to run on
 const port = process.env.PORT || 8080;
+var nodemailer = require('nodemailer')
+const retrieve = require('./retrieve')
 var listingsFile = require('./listings.json');
 var houseFile = require('./houseListings.json');
 var landFile = require('./landListings.json');
-var nodemailer = require('nodemailer')
-const retrieve = require('./retrieve')
 
 let houseData = houseFile;
 let landData = landFile;
