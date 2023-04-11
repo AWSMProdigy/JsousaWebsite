@@ -12,9 +12,28 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const port = process.env.PORT || 8080;
 var nodemailer = require('nodemailer')
 const retrieve = require('./retrieve')
-var listingsFile = require('./listings.json');
-var houseFile = require('./houseListings.json');
-var landFile = require('./landListings.json');
+var listingsFile;
+var houseFile;
+var landFile;
+try{
+  listingsFile = require('./listings.json');
+}
+catch{
+  listingsFile = []
+}
+try{
+  houseFile = require('./houseListings.json');
+}
+catch{
+  houseFile = []
+}
+try{
+  landFile = require('./landListings.json');
+}
+catch{
+  landFile = [];
+}
+
 
 let houseData = houseFile;
 let landData = landFile;
