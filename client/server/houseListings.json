@@ -636,5 +636,766 @@
         "MlgCanUse": [
             "IDX"
         ]
+    },
+    {
+        "@odata.id": "https://api.mlsgrid.com/v2/Property('MFR678536177')",
+        "ListingKey": "MFR678536177",
+        "OriginatingSystemKey": "678536177",
+        "AdditionalParcelsYN": false,
+        "MFR_AdditionalWaterInformation": "One street from Halifax River. Views from the back yard.",
+        "Appliances": [
+            "Dishwasher",
+            "Dryer",
+            "Microwave",
+            "Refrigerator",
+            "Solar Hot Water",
+            "Washer"
+        ],
+        "MFR_Association2YN": "0",
+        "AssociationYN": false,
+        "MFR_AvailableForLeaseYN": "0",
+        "BathroomsFull": 2,
+        "BathroomsHalf": 0,
+        "BathroomsTotalInteger": 2,
+        "BedroomsTotal": 3,
+        "BuildingAreaUnits": "Square Feet",
+        "BuyerAgencyCompensation": "2%",
+        "MFR_CDDYN": "0",
+        "MFR_CalculatedListPriceByCalculatedSqFt": "205.67",
+        "CarportSpaces": 1,
+        "CarportYN": true,
+        "City": "DAYTONA BEACH",
+        "ConstructionMaterials": [
+            "Brick"
+        ],
+        "Cooling": [
+            "Central Air",
+            "Mini-Split Unit(s)",
+            "Wall/Window Unit(s)"
+        ],
+        "Country": "US",
+        "CountyOrParish": "Volusia",
+        "CumulativeDaysOnMarket": 78,
+        "MFR_CurrentPrice": "290000.00",
+        "MFR_DPRURL": "https://www.workforce-resource.com/dpr/listing/MFRMLS/OM648976?w=Agent&skip_sso=true",
+        "MFR_DPRURL2": "https://www.workforce-resource.com/dpr/listing/MFRMLS/OM648976?w=Customer",
+        "MFR_DPRYN": "1",
+        "DaysOnMarket": 78,
+        "DirectionFaces": "Southwest",
+        "Disclosures": [
+            "None"
+        ],
+        "MFR_EscrowAgentEmail": "ali.endicott@firstintitle.com",
+        "MFR_EscrowCity": "Dunnellon",
+        "MFR_EscrowCompany": "First International Title",
+        "MFR_EscrowPostalCode": "34432",
+        "MFR_EscrowState": "FL",
+        "MFR_EscrowStreetName": "Mary St",
+        "MFR_EscrowStreetNumber": "12013",
+        "MFR_ExistLseTenantYN": "0",
+        "ExteriorFeatures": [
+            "Lighting",
+            "Private Mailbox",
+            "Storage"
+        ],
+        "Fencing": [
+            "Fenced"
+        ],
+        "FireplaceYN": false,
+        "MFR_FloodZoneCode": "X500",
+        "Flooring": [
+            "Laminate",
+            "Wood"
+        ],
+        "FoundationDetails": [
+            "Slab"
+        ],
+        "GarageYN": false,
+        "GreenEnergyGeneration": [
+            "Solar"
+        ],
+        "MFR_GreenVerificationCount": "0",
+        "Heating": [
+            "Electric"
+        ],
+        "MFR_HomesteadYN": "1",
+        "InteriorFeatures": [
+            "Ceiling Fans(s)",
+            "Living Room/Dining Room Combo"
+        ],
+        "InternetAddressDisplayYN": true,
+        "InternetAutomatedValuationDisplayYN": true,
+        "InternetConsumerCommentYN": true,
+        "InternetEntireListingDisplayYN": true,
+        "Levels": [
+            "One"
+        ],
+        "ListAOR": "Ocala - Marion",
+        "ListAgentAOR": "Ocala - Marion",
+        "ListAgentDirectPhone": "352-857-7499",
+        "ListAgentEmail": "jorgesousarealtor@gmail.com",
+        "ListAgentFax": "352-304-5722",
+        "ListAgentFullName": "Jorge DeSousa",
+        "ListAgentKey": "MFR536943803",
+        "ListAgentMlsId": "MFR271515978",
+        "ListAgentPager": "352-857-7499",
+        "MFR_AttributionContact": "352-620-0207",
+        "MFR_ListOfficeContactPreferred": "352-620-0207",
+        "ListOfficeFax": "352-304-5722",
+        "MFR_ListOfficeHeadOfficeKeyNumeric": "1044912",
+        "ListOfficeKey": "MFR1044912",
+        "ListOfficeMlsId": "MFR271500543",
+        "ListOfficeName": "PLATINUM HOMES AND LAND REALTY",
+        "ListOfficePhone": "352-620-0207",
+        "ListPrice": 290000,
+        "ListingAgreement": "Exclusive Right To Sell",
+        "ListingContractDate": "2022-11-14",
+        "MFR_ListingExclusionYN": "0",
+        "ListingId": "MFROM648976",
+        "ListingTerms": [
+            "Cash",
+            "Conventional"
+        ],
+        "LivingArea": 1410,
+        "MFR_LivingAreaMeters": "130.99",
+        "LivingAreaSource": "Public Records",
+        "LivingAreaUnits": "Square Feet",
+        "LotSizeAcres": 0.34,
+        "LotSizeDimensions": "70x210",
+        "LotSizeSquareFeet": 14700,
+        "MFR_LotSizeSquareMeters": "1366",
+        "MLSAreaMajor": "32117 - Daytona Beach",
+        "MlsStatus": "Active",
+        "NewConstructionYN": false,
+        "MFR_NonRepCompensation": "2%",
+        "OccupantType": "Owner",
+        "OnMarketDate": "2022-11-14",
+        "OriginalEntryTimestamp": "2022-11-14T21:06:52.000Z",
+        "OriginalListPrice": 305500,
+        "MFR_OriginatingSystemName_": "Stellar MLS",
+        "Ownership": "Fee Simple",
+        "ParcelNumber": "3185480.0",
+        "ParkingFeatures": [
+            "Covered"
+        ],
+        "PoolPrivateYN": false,
+        "PostalCode": "32117",
+        "PostalCodePlus4": "1703",
+        "PreviousListPrice": 294500,
+        "MFR_PreviousStatus": "Pending",
+        "PriceChangeTimestamp": "2023-01-29T19:24:21.000Z",
+        "PrivateRemarks": "Please use showing time for your appointment. Confirmation of appointment time will be provided. Commissions paid at closing. Roof 10yrs, A/C 3yrs, new floors and added bonus room. Solar panels on roof. Lots of storage available.",
+        "PropertySubType": "Single Family Residence",
+        "PropertyType": "Residential",
+        "PublicRemarks": "This is a move in ready home. Roof 10yrs, A/C 3yrs, new floors and added bonus room. Solar panels on roof for electric savings. Lots of storage available outback. View of the Halifax river, close for walking and enjoying the waterway. Close to dining and shopping. Home has a great flow about it. Built in wall shelves. Custom walk in shower in master bath. Master bedroom has enough room for a King sizes bed. Covered parking with storage. Great yard for cookouts or bring in that dream pool. Front yard is spacious to park your RV or boat. Make the appointment today to see this wonderful home. Just South of Daytona Beach, drive the coastal waterway and see the beautiful scenery and homes. Come and enjoy Florida's coastal water living.",
+        "MFR_PublicRemarksAgent": "This is a move in ready home. Roof 10yrs, A/C 3yrs, new floors and added bonus room. Solar panels on roof for electric savings. Lots of storage available outback. View of the Halifax river, close for walking and enjoying the waterway. Close to dining and shopping. Home has a great flow about it. Built in wall shelves. Custom walk in shower in master bath. Master bedroom has enough room for a King sizes bed. Covered parking with storage. Great yard for cookouts or bring in that dream pool. Front yard is spacious to park your RV or boat. Make the appointment today to see this wonderful home. Just South of Daytona Beach, drive the coastal waterway and see the beautiful scenery and homes. Come and enjoy Florida's coastal water living.",
+        "PublicSurveyRange": "32E",
+        "PublicSurveySection": "42",
+        "MFR_RATIO_CurrentPrice_By_CalculatedSqFt": "205.67",
+        "MFR_RealtorInfo": "As-Is,No Sign",
+        "RoadSurfaceType": [
+            "Paved"
+        ],
+        "Roof": [
+            "Shingle"
+        ],
+        "MFR_RoomCount": "3",
+        "MFR_SDEOYN": "0",
+        "SeniorCommunityYN": false,
+        "Sewer": [
+            "Public Sewer"
+        ],
+        "ShowingRequirements": [
+            "Appointment Only",
+            "Call Before Showing",
+            "Go Direct",
+            "No Sign",
+            "Pet(s) on Premises",
+            "See Remarks",
+            "ShowingTime"
+        ],
+        "SpecialListingConditions": [
+            "None"
+        ],
+        "StandardStatus": "Active",
+        "StateOrProvince": "FL",
+        "StatusChangeTimestamp": "2023-04-27T23:09:22.000Z",
+        "StoriesTotal": 1,
+        "SubdivisionName": "RIO VISTA SEC B",
+        "TaxAnnualAmount": 1028.74,
+        "TaxBlock": "20",
+        "TaxBookNumber": "MB10-69",
+        "TaxLegalDescription": "N 20 FT OF LOT 2 & S 50 FT OF LOT 3 BLK 20 RIO VISTA MB 6 PG 150 PER OR 4368 PG 4865 PER OR 7863 PG 4201",
+        "TaxLot": "2",
+        "TaxYear": 2021,
+        "MFR_TotalAcreage": "1/4 to less than 1/2",
+        "MFR_TotalAnnualFees": "0.00",
+        "MFR_TotalMonthlyFees": "0.00",
+        "Township": "14S",
+        "TransactionBrokerCompensation": "2%",
+        "MFR_UnitNumberYN": "0",
+        "UniversalPropertyId": "US-12127-N-31854800-R-N",
+        "Utilities": [
+            "Cable Connected",
+            "Electricity Connected",
+            "Public",
+            "Sewer Connected"
+        ],
+        "VirtualTourURLUnbranded": "https://www.propertypanorama.com/instaview/stellar/OM648976",
+        "MFR_WaterAccessYN": "0",
+        "MFR_WaterExtrasYN": "0",
+        "WaterSource": [
+            "Public"
+        ],
+        "MFR_WaterView": "Canal",
+        "MFR_WaterViewYN": "1",
+        "MFR_WaterfrontFeetTotal": "0",
+        "WaterfrontYN": false,
+        "YearBuilt": 1955,
+        "Zoning": "09R1",
+        "ModificationTimestamp": "2023-04-27T23:10:08.696Z",
+        "OriginatingSystemName": "mfrmls",
+        "Media": [
+            {
+                "MediaType": "jpg",
+                "Order": 0,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/8b6434c5-45a9-4e9a-9bad-7099b48b0892.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.933Z",
+                "MediaKey": "6372ae294364df4fab5eb3f0"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 1,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/0755dbaa-78c7-46c0-a3b2-a7831abafeb0.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.955Z",
+                "MediaKey": "6372ae294364df4fab5eb3f1"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 2,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/1aed6e60-60d6-4f14-9de4-95b5f73b499c.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.876Z",
+                "MediaKey": "6372ae294364df4fab5eb3f2"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 3,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/dcdd5141-b6ef-4394-b136-a2b07a60548e.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.957Z",
+                "MediaKey": "6372ae294364df4fab5eb3f3"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 4,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/7d2ea3f9-a5b5-48b3-9429-6fa997408fe8.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.915Z",
+                "MediaKey": "6372ae294364df4fab5eb3f4"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 5,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/eb0f5778-a077-4ab2-82e8-6fb44b33d531.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.905Z",
+                "MediaKey": "6372ae294364df4fab5eb3f5"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 6,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/f8b0651a-2d80-4983-acb0-fe8412ebad41.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.955Z",
+                "MediaKey": "6372ae294364df4fab5eb3f6"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 7,
+                "ImageWidth": 511,
+                "ImageHeight": 768,
+                "ImageSizeDescription": "511x768",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/cb5b8dcf-cfad-44de-8214-e832c2939c93.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.882Z",
+                "MediaKey": "6372ae294364df4fab5eb3f7"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 8,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/dc9ec6a0-1441-4a19-81b5-6503c86ebb35.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.876Z",
+                "MediaKey": "6372ae294364df4fab5eb3f8"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 9,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/8f7af8d8-5f3b-48c5-8370-1e538aa65785.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.910Z",
+                "MediaKey": "6372ae294364df4fab5eb3f9"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 10,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/97529081-d6ad-4e2a-ad5b-4fad6730db14.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.878Z",
+                "MediaKey": "6372ae294364df4fab5eb3fa"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 11,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/a2a46602-8848-4b44-af4d-8f92f1b53563.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.919Z",
+                "MediaKey": "6372ae294364df4fab5eb3fb"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 12,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/03c8bbcb-b109-46a4-8d4c-f098929850b3.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.862Z",
+                "MediaKey": "6372ae294364df4fab5eb3fc"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 13,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/a8dce045-9471-4afd-ab17-0ce1595760ee.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.859Z",
+                "MediaKey": "6372ae294364df4fab5eb3fd"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 14,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/08216742-e6f5-4cc6-b630-70777a196a5c.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.882Z",
+                "MediaKey": "6372ae294364df4fab5eb3fe"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 15,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/bb5c803c-6817-4aaa-ae29-fb6a470044c8.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.876Z",
+                "MediaKey": "6372ae294364df4fab5eb3ff"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 16,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/05e82128-0b63-4ba5-a685-b3b17aba7e12.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.864Z",
+                "MediaKey": "6372ae294364df4fab5eb400"
+            },
+            {
+                "LongDescription": "Bedroom one",
+                "MediaType": "jpg",
+                "Order": 17,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/9a88a897-4a37-48bd-9f84-954bfe0aa8d9.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.862Z",
+                "MediaKey": "6372ae294364df4fab5eb401"
+            },
+            {
+                "LongDescription": "Bedroom one",
+                "MediaType": "jpg",
+                "Order": 18,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/fd8b66aa-bfa3-43fa-978a-ad51ea6ee2b0.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.907Z",
+                "MediaKey": "6372ae294364df4fab5eb402"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 19,
+                "ImageWidth": 511,
+                "ImageHeight": 768,
+                "ImageSizeDescription": "511x768",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/c4ba06e7-f26a-4088-9665-e997f7db7fb4.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.873Z",
+                "MediaKey": "6372ae294364df4fab5eb403"
+            },
+            {
+                "LongDescription": "Guess bathroom",
+                "MediaType": "jpg",
+                "Order": 20,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/12dbe7e9-0292-4c60-aa9f-71495774602e.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.874Z",
+                "MediaKey": "6372ae294364df4fab5eb404"
+            },
+            {
+                "LongDescription": "Guess bathroom",
+                "MediaType": "jpg",
+                "Order": 21,
+                "ImageWidth": 511,
+                "ImageHeight": 768,
+                "ImageSizeDescription": "511x768",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/d9962580-517d-4c2e-b3c5-2bd334f511d4.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.862Z",
+                "MediaKey": "6372ae294364df4fab5eb405"
+            },
+            {
+                "LongDescription": "Guess bathroom",
+                "MediaType": "jpg",
+                "Order": 22,
+                "ImageWidth": 511,
+                "ImageHeight": 768,
+                "ImageSizeDescription": "511x768",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/8e08ad58-038e-403c-af12-102be3652779.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.877Z",
+                "MediaKey": "6372ae294364df4fab5eb406"
+            },
+            {
+                "LongDescription": "Guess bathroom",
+                "MediaType": "jpg",
+                "Order": 23,
+                "ImageWidth": 511,
+                "ImageHeight": 768,
+                "ImageSizeDescription": "511x768",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/175ad8f1-3a30-4f38-be8e-bf6bcbd7dcc1.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.903Z",
+                "MediaKey": "6372ae294364df4fab5eb407"
+            },
+            {
+                "LongDescription": "Guess bathroom",
+                "MediaType": "jpg",
+                "Order": 24,
+                "ImageWidth": 511,
+                "ImageHeight": 768,
+                "ImageSizeDescription": "511x768",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/5f756db0-f724-44bf-acc6-147f78364e28.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.863Z",
+                "MediaKey": "6372ae294364df4fab5eb408"
+            },
+            {
+                "LongDescription": "Guess room",
+                "MediaType": "jpg",
+                "Order": 25,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/7758a497-ec54-4ec3-bfe0-8fdf662f099c.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.905Z",
+                "MediaKey": "6372ae294364df4fab5eb409"
+            },
+            {
+                "LongDescription": "Master Shower / Bath",
+                "MediaType": "jpg",
+                "Order": 26,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/b6d4c81c-a28e-4f1d-92ba-1ce90ff02b8d.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.859Z",
+                "MediaKey": "6372ae294364df4fab5eb40a"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 27,
+                "ImageWidth": 511,
+                "ImageHeight": 768,
+                "ImageSizeDescription": "511x768",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/b10a76b8-8fce-45c3-8a56-73cc645bda16.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.862Z",
+                "MediaKey": "6372ae294364df4fab5eb40b"
+            },
+            {
+                "LongDescription": "Laundry room",
+                "MediaType": "jpg",
+                "Order": 28,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/af274980-6fd9-4ded-b7e7-6fa4f482275f.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.876Z",
+                "MediaKey": "6372ae294364df4fab5eb40c"
+            },
+            {
+                "LongDescription": "second access door to backyard",
+                "MediaType": "jpg",
+                "Order": 29,
+                "ImageWidth": 511,
+                "ImageHeight": 768,
+                "ImageSizeDescription": "511x768",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/3be76b98-f157-447d-9e98-14234e23e309.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.876Z",
+                "MediaKey": "6372ae294364df4fab5eb40d"
+            },
+            {
+                "LongDescription": "Master Bedroom",
+                "MediaType": "jpg",
+                "Order": 30,
+                "ImageWidth": 511,
+                "ImageHeight": 768,
+                "ImageSizeDescription": "511x768",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/a589a088-d6cf-487e-82ef-1dd9ab032130.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.859Z",
+                "MediaKey": "6372ae294364df4fab5eb40e"
+            },
+            {
+                "LongDescription": "Master Bedroom",
+                "MediaType": "jpg",
+                "Order": 31,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/a08bacea-ae9d-4faf-884d-618e98c36402.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.862Z",
+                "MediaKey": "6372ae294364df4fab5eb40f"
+            },
+            {
+                "LongDescription": "Master Bedroom",
+                "MediaType": "jpg",
+                "Order": 32,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/6276fc0c-5176-4232-8f4e-b2a272cda74a.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.905Z",
+                "MediaKey": "6372ae294364df4fab5eb410"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 33,
+                "ImageWidth": 511,
+                "ImageHeight": 768,
+                "ImageSizeDescription": "511x768",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/55b29ad8-1362-495c-b7f1-23c883f13084.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.878Z",
+                "MediaKey": "6372ae294364df4fab5eb411"
+            },
+            {
+                "LongDescription": "Custom built room",
+                "MediaType": "jpg",
+                "Order": 34,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/a3a91e55-9ffd-4df3-8feb-009d2912770f.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.877Z",
+                "MediaKey": "6372ae294364df4fab5eb412"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 35,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/6741480e-d7e9-4271-8597-cdef6c506fb8.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.862Z",
+                "MediaKey": "6372ae294364df4fab5eb413"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 36,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/cef39d6d-f9b4-4e56-a6c1-1dfb94785553.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.930Z",
+                "MediaKey": "6372ae294364df4fab5eb414"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 37,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/3d3f672c-c833-47e1-a778-25241b5c6ecb.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.924Z",
+                "MediaKey": "6372ae294364df4fab5eb415"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 38,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/10bc3b1b-7ab6-42ce-9d93-41692a38cbff.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.903Z",
+                "MediaKey": "6372ae294364df4fab5eb416"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 39,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/0cfe2e84-32e0-45e0-9aeb-d480c7307d40.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.919Z",
+                "MediaKey": "6372ae294364df4fab5eb417"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 40,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/83739ba9-e049-4610-b3be-6c9a5b5e0cde.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.939Z",
+                "MediaKey": "6372ae294364df4fab5eb418"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 41,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/0e5a79fd-0f39-4b64-8494-92a0aaaa525f.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.903Z",
+                "MediaKey": "6372ae294364df4fab5eb419"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 42,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/772616ad-a890-4e46-af10-e4a2dc2a5d79.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.873Z",
+                "MediaKey": "6372ae294364df4fab5eb41a"
+            },
+            {
+                "LongDescription": "Halifax River from back yard",
+                "MediaType": "jpg",
+                "Order": 43,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/f07a26f4-fe1a-464d-b7e7-68cac5f80aad.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.906Z",
+                "MediaKey": "6372ae294364df4fab5eb41b"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 44,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/25bb26e0-faed-4612-a068-0339f591dc2d.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.906Z",
+                "MediaKey": "6372ae294364df4fab5eb41c"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 45,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/479495a0-d271-4f3f-8432-9b24a13596df.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.865Z",
+                "MediaKey": "6372ae294364df4fab5eb41d"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 46,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/1ca037e0-6551-4148-bf00-dfd991439339.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.910Z",
+                "MediaKey": "6372ae294364df4fab5eb41e"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 47,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/0c3a0b64-3850-4856-95f7-4e8ec9b523e0.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.912Z",
+                "MediaKey": "6372ae294364df4fab5eb41f"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 48,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/a6de4952-4152-4421-8ee7-4006d5cbd198.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.922Z",
+                "MediaKey": "6372ae294364df4fab5eb420"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 49,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/5e682d32-813a-478e-baad-d74a43eb6a14.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.934Z",
+                "MediaKey": "6372ae294364df4fab5eb421"
+            },
+            {
+                "LongDescription": "Solar Panels",
+                "MediaType": "jpg",
+                "Order": 50,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR678536177/3ca585c2-729a-48b2-baae-e8a0c32ee412.jpeg",
+                "MediaModificationTimestamp": "2022-11-14T21:07:53.942Z",
+                "MediaKey": "6372ae294364df4fab5eb422"
+            }
+        ],
+        "PhotosCount": 51,
+        "PhotosChangeTimestamp": "2022-11-14T21:08:08.634Z",
+        "Directions": "Use Google maps. Easy to find.",
+        "Latitude": 29.261652,
+        "Longitude": -81.044737,
+        "StreetName": "ARECA",
+        "StreetNumber": "1715",
+        "StreetSuffix": "WAY",
+        "UnparsedAddress": "1715 ARECA WAY",
+        "MlgCanView": true,
+        "MlgCanUse": [
+            "IDX"
+        ]
     }
 ]
