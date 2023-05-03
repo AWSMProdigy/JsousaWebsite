@@ -2,7 +2,6 @@ const axios = require('axios');
 const fs = require('fs');
 require('dotenv').config();
 let nextUrl = null;
-let landArray = [];
 
 let headers = {
     headers: {
@@ -19,6 +18,7 @@ function wait(time) {
 }
 
 async function gatherListings(){
+    let landArray = [];
     await axios.get(`https://api.mlsgrid.com/v2/Property?$expand=Media&$filter=OriginatingSystemName%20eq%20'mfrmls' and ListOfficeMlsId eq 'MFR271500543'`, headers)
     .then(res => {
         if(res.data["@odata.nextLink"]){
@@ -80,6 +80,6 @@ async function gatherListings(){
 
 gatherListings();
 
-setInterval(() => gatherListings(), 900000)
+setInterval(() => gatherListings(), 30000)
 
 module.exports.gatherListings = gatherListings;

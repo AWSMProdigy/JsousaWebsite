@@ -15,6 +15,9 @@ const retrieve = require('./retrieve')
 var listingsFile;
 var houseFile;
 var landFile;
+var houseData;
+var landData;
+
 try{
   listingsFile = require('./listings.json');
 }
@@ -35,8 +38,47 @@ catch{
 }
 
 
-let houseData = houseFile;
-let landData = landFile;
+houseData = houseFile;
+landData = landFile;
+
+setInterval(() =>{
+  
+  fs.readFile("./listings.json", "utf8", (err, jsonString) => {
+    if(err){
+      console.log("Error reading file from disk", err);
+      return
+    }
+    try{
+      listingsFile = JSON.parse(jsonString)
+    } catch(error) {
+      console.log("Listings.json " + error)
+    }
+  })
+  
+  fs.readFile("./houseListings.json", "utf8", (err, jsonString) => {
+    if(err){
+      console.log("Error reading file from disk", err);
+      return
+    }
+    try{
+      houseData = JSON.parse(jsonString)
+    } catch(error) {
+      console.log("houseListings.json " + error)
+    }
+  })
+  fs.readFile("./landListings.json", "utf8", (err, jsonString) => {
+    if(err){
+      console.log("Error reading file from disk", err);
+      return
+    }
+    try{
+      landData = JSON.parse(jsonString)
+    } catch(error) {
+      console.log("landlistings.json " + error)
+    }
+  })
+  console.log("Refreshed files")
+}, 60000)
 
 
 const transporter = nodemailer.createTransport({
