@@ -78,7 +78,7 @@ setInterval(() =>{
     }
   })
   console.log("Refreshed files")
-}, 60000)
+}, 900000)
 
 
 const transporter = nodemailer.createTransport({

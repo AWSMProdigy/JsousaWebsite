@@ -80,6 +80,6 @@ async function gatherListings(){
 
 gatherListings();
 
-setInterval(() => gatherListings(), 30000)
+setInterval(() => gatherListings(), 900000)
 
 module.exports.gatherListings = gatherListings;
