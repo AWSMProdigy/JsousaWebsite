@@ -1,643 +1,5 @@
 [
     {
-        "@odata.id": "https://api.mlsgrid.com/v2/Property('MFR591507434')",
-        "ListingKey": "MFR591507434",
-        "OriginatingSystemKey": "591507434",
-        "BathroomsFull": 2,
-        "BathroomsHalf": 0,
-        "BathroomsTotalInteger": 2,
-        "BedroomsTotal": 3,
-        "BuildingAreaUnits": "Square Feet",
-        "BuyerAgencyCompensation": "2.5%",
-        "Cooling": [
-            "Central Air"
-        ],
-        "CountyOrParish": "Marion",
-        "CumulativeDaysOnMarket": 184,
-        "DaysOnMarket": 184,
-        "Heating": [
-            "Central",
-            "Electric"
-        ],
-        "InternetAddressDisplayYN": true,
-        "InternetAutomatedValuationDisplayYN": true,
-        "InternetConsumerCommentYN": true,
-        "InternetEntireListingDisplayYN": true,
-        "ListAgentAOR": "Ocala - Marion",
-        "ListAgentDirectPhone": "352-857-7499",
-        "ListAgentEmail": "jorgesousarealtor@gmail.com",
-        "ListAgentFullName": "Jorge DeSousa",
-        "ListAgentKey": "MFR536943803",
-        "ListAgentMlsId": "MFR271515978",
-        "ListAOR": "Ocala - Marion",
-        "ListingAgreement": "Exclusive Right To Sell",
-        "ListingContractDate": "2022-07-26",
-        "ListingId": "MFROM643311",
-        "ListOfficeKey": "MFR1044912",
-        "ListOfficeMlsId": "MFR271500543",
-        "ListOfficeName": "PLATINUM HOMES AND LAND REALTY",
-        "ListOfficePhone": "352-620-0207",
-        "ListPrice": 265000,
-        "LivingArea": 1780,
-        "LivingAreaSource": "Public Records",
-        "LivingAreaUnits": "Square Feet",
-        "MlsStatus": "Active",
-        "OriginalEntryTimestamp": "2022-07-29T19:07:50.000Z",
-        "OriginalListPrice": 283000,
-        "MFR_OriginatingSystemName_": "Stellar MLS",
-        "ParcelNumber": "8001-0188-11",
-        "PostalCode": "34473",
-        "PostalCodePlus4": "2057",
-        "PreviousListPrice": 270000,
-        "PriceChangeTimestamp": "2022-12-23T19:00:47.000Z",
-        "PrivateRemarks": "PLEASE SUBMIT ALL OFFERS WITH A FLORIDA AS-IS CONTRACT AND INCLUDE POF AND OR PRE-APPROVAL WITH THE OFFER. COMMISSIONS PAID UPON A SUCCESSFUL CLOSING ONLY. INFORMATION IS DEEMED RELIABLE AND ROOM SIZES ARE TO BE VERIFIED BY THE BUYER AND THEIR AGENT. Older gentleman, please knock for access. Bring your best and highest offers. Motivated Seller. Must use showing time for appointments. Thank you for showing.",
-        "PropertySubType": "Single Family Residence",
-        "PropertyType": "Residential",
-        "PublicRemarks": "This is a home with great curb appeal and features a driveway made of pavers, a vinyl fence for privacy, a Florida room, a large fireplace in the family room, a spacious master bedroom and bathroom with a Jacuzzi tub, a split floor plan, a large galley kitchen with an eat-in area, roof from 2005 with solar panels to save on monthly electricity, A/C unit 3 years old and a water heater 4 years old, an indoor laundry room, and a spacious garage with storage. The home is conveniently located close to shopping, dining and RT 200 and I75. The seller is motivated, only serious buyers should inquire. Washer and dryer are negotiable. Let's make the move together!",
-        "StandardStatus": "Active",
-        "StateOrProvince": "FL",
-        "StatusChangeTimestamp": "2023-02-02T16:45:21.000Z",
-        "StoriesTotal": 1,
-        "TaxYear": 2021,
-        "YearBuilt": 1988,
-        "MFR_PreviousStatus": "Temporarily Off-Market",
-        "MFR_CurrentPrice": "265000.00",
-        "MFR_RoomCount": "3",
-        "SpecialListingConditions": [
-            "None"
-        ],
-        "AdditionalParcelsYN": false,
-        "Appliances": [
-            "Cooktop",
-            "Dishwasher",
-            "Dryer",
-            "Electric Water Heater",
-            "Exhaust Fan",
-            "Range",
-            "Refrigerator",
-            "Washer"
-        ],
-        "AttachedGarageYN": true,
-        "MFR_AvailableForLeaseYN": "0",
-        "CarportYN": false,
-        "MFR_CDDYN": "0",
-        "ConstructionMaterials": [
-            "Block",
-            "Brick",
-            "Concrete",
-            "Stucco"
-        ],
-        "Country": "US",
-        "DirectionFaces": "West",
-        "Disclosures": [
-            "None",
-            "Seller Property Disclosure"
-        ],
-        "MFR_DPRURL": "https://www.workforce-resource.com/dpr/listing/MFRMLS/OM643311?w=Agent&skip_sso=true",
-        "MFR_DPRURL2": "https://www.workforce-resource.com/dpr/listing/MFRMLS/OM643311?w=Customer",
-        "MFR_DPRYN": "1",
-        "MFR_ExistLseTenantYN": "0",
-        "FireplaceYN": true,
-        "MFR_FloodZoneCode": "X",
-        "MFR_FloodZonePanel": "85",
-        "FoundationDetails": [
-            "Slab"
-        ],
-        "ExteriorFeatures": [
-            "Lighting"
-        ],
-        "Fencing": [
-            "Fenced",
-            "Vinyl"
-        ],
-        "GarageSpaces": 2,
-        "GarageYN": true,
-        "MFR_HomesteadYN": "1",
-        "Zoning": "R1",
-        "ListAgentFax": "352-304-5722",
-        "ListAgentPager": "352-857-7499",
-        "ListOfficeFax": "352-304-5722",
-        "LotSizeAcres": 0.24,
-        "LotSizeDimensions": "85x125",
-        "LotSizeSquareFeet": 10454,
-        "NewConstructionYN": false,
-        "Ownership": "Fee Simple",
-        "ParkingFeatures": [
-            "Driveway",
-            "Garage Door Opener"
-        ],
-        "PoolPrivateYN": false,
-        "PublicSurveyRange": "21E",
-        "PublicSurveySection": "10",
-        "MFR_RealtorInfo": "As-Is,Sign",
-        "Roof": [
-            "Shingle"
-        ],
-        "SeniorCommunityYN": false,
-        "ShowingRequirements": [
-            "Call Listing Agent",
-            "Go Direct",
-            "See Remarks",
-            "ShowingTime"
-        ],
-        "SubdivisionName": "MARION OAKS UN 01",
-        "City": "OCALA",
-        "TaxAnnualAmount": 1086.32,
-        "TaxBlock": "188",
-        "TaxBookNumber": "O-001",
-        "TaxLegalDescription": "SEC 10 TWP 17 RGE 21 PLAT BOOK O PAGE 001 MARION OAKS UNIT 1 BLK 188 LOT 11",
-        "TaxLot": "11",
-        "MFR_TotalAcreage": "0 to less than 1/4",
-        "Township": "17S",
-        "TransactionBrokerCompensation": "2.5%",
-        "Utilities": [
-            "Cable Connected",
-            "Electricity Connected",
-            "Solar"
-        ],
-        "VirtualTourURLUnbranded": "https://www.propertypanorama.com/instaview/stellar/OM643311",
-        "MFR_WaterAccessYN": "0",
-        "MFR_WaterExtrasYN": "0",
-        "MFR_WaterfrontFeetTotal": "0",
-        "WaterfrontYN": false,
-        "WaterSource": [
-            "Public"
-        ],
-        "MFR_WaterViewYN": "0",
-        "MLSAreaMajor": "34473 - Ocala",
-        "AssociationYN": false,
-        "GreenEnergyGeneration": [
-            "Solar"
-        ],
-        "InteriorFeatures": [
-            "Ceiling Fans(s)",
-            "Eat-in Kitchen",
-            "Living Room/Dining Room Combo"
-        ],
-        "ListingTerms": [
-            "Cash",
-            "Conventional",
-            "FHA",
-            "VA Loan"
-        ],
-        "Flooring": [
-            "Carpet",
-            "Vinyl"
-        ],
-        "Sewer": [
-            "Public Sewer"
-        ],
-        "MFR_CalculatedListPriceByCalculatedSqFt": "148.88",
-        "Levels": [
-            "One"
-        ],
-        "MFR_ListOfficeHeadOfficeKeyNumeric": "1044912",
-        "MFR_NonRepCompensation": "2.5%",
-        "MFR_UnitNumberYN": "0",
-        "MFR_RATIO_CurrentPrice_By_CalculatedSqFt": "148.88",
-        "MFR_LivingAreaMeters": "165.37",
-        "MFR_LotSizeSquareMeters": "971",
-        "MFR_SDEOYN": "0",
-        "MFR_PublicRemarksAgent": "This is a home with great curb appeal and features a driveway made of pavers, a vinyl fence for privacy, a Florida room, a large fireplace in the family room, a spacious master bedroom and bathroom with a Jacuzzi tub, a split floor plan, a large galley kitchen with an eat-in area, roof from 2005 with solar panels to save on monthly electricity, A/C unit 3 years old and a water heater 4 years old, an indoor laundry room, and a spacious garage with storage. The home is conveniently located close to shopping, dining and RT 200 and I75. The seller is motivated, only serious buyers should inquire. Washer and dryer are negotiable. Let's make the move together!",
-        "MFR_TotalAnnualFees": "0.00",
-        "MFR_TotalMonthlyFees": "0.00",
-        "MFR_GreenVerificationCount": "0",
-        "UniversalPropertyId": "US-12083-N-8001018811-R-N",
-        "MFR_ListingExclusionYN": "0",
-        "OccupantType": "Owner",
-        "RoadSurfaceType": [
-            "Paved"
-        ],
-        "MFR_EscrowAgentEmail": "ali.endicott@firstintitle.com",
-        "MFR_EscrowAgentName": "Ali Endicott",
-        "MFR_EscrowAgentPhone": "352-513-4856",
-        "MFR_EscrowCity": "Dunnellon",
-        "MFR_EscrowCompany": "First International Title",
-        "MFR_EscrowPostalCode": "34432",
-        "MFR_EscrowState": "FL",
-        "MFR_EscrowStreetName": "Mary Street",
-        "MFR_EscrowStreetNumber": "12013",
-        "OnMarketDate": "2022-07-29",
-        "MFR_Association2YN": "0",
-        "ModificationTimestamp": "2023-02-02T16:52:10.058Z",
-        "OriginatingSystemName": "mfrmls",
-        "Media": [
-            {
-                "MediaType": "jpg",
-                "Order": 0,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/276c8fa1-2272-4c28-ac6f-9aa67d067e1a.jpeg",
-                "MediaModificationTimestamp": "2022-07-29T19:08:42.172Z",
-                "MediaKey": "62e4303a4397d76d56e45e58"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 1,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/ec1eb54e-3db8-4572-8413-4e8d563f6a9c.jpeg",
-                "MediaModificationTimestamp": "2022-07-29T19:08:42.189Z",
-                "MediaKey": "62e4303a4397d76d56e45e59"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 2,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/72977767-eae5-4a74-b196-06fe42486f06.jpeg",
-                "MediaModificationTimestamp": "2022-07-29T19:08:42.204Z",
-                "MediaKey": "62e4303a4397d76d56e45e5a"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 3,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/9516f976-a14e-41da-910d-38ed7c82c6c2.jpeg",
-                "MediaModificationTimestamp": "2022-07-29T19:08:42.181Z",
-                "MediaKey": "62e4303a4397d76d56e45e5b"
-            },
-            {
-                "LongDescription": "Front Sitting Area",
-                "MediaType": "jpg",
-                "Order": 4,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/099551b8-785a-47d2-b890-345712eb7e06.jpeg",
-                "MediaModificationTimestamp": "2022-07-29T19:08:42.198Z",
-                "MediaKey": "62e4303a4397d76d56e45e5c"
-            },
-            {
-                "LongDescription": "Driveway Pavers",
-                "MediaType": "jpg",
-                "Order": 5,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/1cb43e17-cca8-48f5-adb6-944e107efbec.jpeg",
-                "MediaModificationTimestamp": "2022-07-29T19:08:42.203Z",
-                "MediaKey": "62e4303a4397d76d56e45e5d"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 6,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/3250ce61-407b-4f8c-9814-ea0f9ecf7ca1.jpeg",
-                "MediaModificationTimestamp": "2022-07-29T19:08:42.169Z",
-                "MediaKey": "62e4303a4397d76d56e45e5e"
-            },
-            {
-                "LongDescription": "A/C Unit 3Yrs Old",
-                "MediaType": "jpg",
-                "Order": 7,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/893172f4-2d0c-48ed-b859-32c1520d4a54.jpeg",
-                "MediaModificationTimestamp": "2022-07-29T19:08:42.152Z",
-                "MediaKey": "62e4303a4397d76d56e45e5f"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 8,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/1bae04d9-9fe7-4f07-8709-e3d4198eade5.jpeg",
-                "MediaModificationTimestamp": "2022-07-29T19:08:42.204Z",
-                "MediaKey": "62e4303a4397d76d56e45e60"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 9,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/e5c2c2b2-a115-4fac-8bcd-6ee78d70d63e.jpeg",
-                "MediaModificationTimestamp": "2022-07-29T19:08:42.169Z",
-                "MediaKey": "62e4303a4397d76d56e45e61"
-            },
-            {
-                "LongDescription": "Solar Panels",
-                "MediaType": "jpg",
-                "Order": 10,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/f8009882-e4dd-4002-ae02-73dd3cbaf86e.jpeg",
-                "MediaModificationTimestamp": "2022-07-29T19:08:42.169Z",
-                "MediaKey": "62e4303a4397d76d56e45e62"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 11,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/ba416965-8ed0-4abd-9788-05952f0f4b72.jpeg",
-                "MediaModificationTimestamp": "2022-07-29T19:08:42.158Z",
-                "MediaKey": "62e4303a4397d76d56e45e63"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 12,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/18d074c6-095c-405d-aaab-ffde9c38d965.jpeg",
-                "MediaModificationTimestamp": "2022-07-29T19:08:42.217Z",
-                "MediaKey": "62e4303a4397d76d56e45e64"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 13,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/cd4a6d81-9ed5-4ec4-b5bc-66f963e48bca.jpeg",
-                "MediaModificationTimestamp": "2022-07-29T19:08:42.203Z",
-                "MediaKey": "62e4303a4397d76d56e45e65"
-            },
-            {
-                "LongDescription": "Front Door entry way",
-                "MediaType": "jpg",
-                "Order": 14,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/e03911ca-4377-4b6c-b43c-d36997526e33.jpeg",
-                "MediaModificationTimestamp": "2022-08-03T23:17:26.039Z",
-                "MediaKey": "62eb02063388de1d2d0d5bd3"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 15,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR591507434/67ec2c37-d004-43f4-b18b-9785e0bfae4e.jpeg",
-                "MediaModificationTimestamp": "2022-09-12T21:46:51.839Z",
-                "MediaKey": "631fa8cbd971f13553749c8a"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 16,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR591507434/71a850fc-3d7c-433b-9ced-77aeb9f74c84.jpeg",
-                "MediaModificationTimestamp": "2022-09-12T21:46:51.834Z",
-                "MediaKey": "631fa8cbd971f13553749c8b"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 17,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/a282bcec-9167-4aa4-89f5-4ae817777291.jpeg",
-                "MediaModificationTimestamp": "2022-08-03T23:17:25.783Z",
-                "MediaKey": "62eb02063388de1d2d0d5bd6"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 18,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/98071914-2a26-4f4f-b15a-5d7fc705ab52.jpeg",
-                "MediaModificationTimestamp": "2022-08-03T23:17:25.780Z",
-                "MediaKey": "62eb02063388de1d2d0d5bd7"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 19,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR591507434/d930fa57-c3f8-4c88-bb42-d5b18faf0f05.jpeg",
-                "MediaModificationTimestamp": "2022-09-12T21:46:51.832Z",
-                "MediaKey": "631fa8cbd971f13553749c8c"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 20,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR591507434/e21c2822-30dc-4883-bfda-44e92d6e27ec.jpeg",
-                "MediaModificationTimestamp": "2022-09-12T21:46:51.834Z",
-                "MediaKey": "631fa8cbd971f13553749c8d"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 21,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/cb5f07b7-8b54-4d14-a46e-1526581d42b4.jpeg",
-                "MediaModificationTimestamp": "2022-08-03T23:17:25.808Z",
-                "MediaKey": "62eb02063388de1d2d0d5bda"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 22,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/1e76cef1-3b03-4f11-82fa-c786c35dc2a4.jpeg",
-                "MediaModificationTimestamp": "2022-08-03T23:17:25.796Z",
-                "MediaKey": "62eb02063388de1d2d0d5bdb"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 23,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/70990772-a6ec-475c-91bb-14f28c135920.jpeg",
-                "MediaModificationTimestamp": "2022-08-03T23:17:25.786Z",
-                "MediaKey": "62eb02063388de1d2d0d5bdc"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 24,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR591507434/b9e37ee2-f17b-4dfe-94f3-8c83a28f0869.jpeg",
-                "MediaModificationTimestamp": "2022-09-12T21:46:51.838Z",
-                "MediaKey": "631fa8cbd971f13553749c8e"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 25,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR591507434/6d7f516c-4b84-478c-a515-05eefd34ea87.jpeg",
-                "MediaModificationTimestamp": "2022-09-12T21:46:51.839Z",
-                "MediaKey": "631fa8cbd971f13553749c8f"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 26,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/0f8cc5b7-945f-4231-9d35-6369dbdc5d72.jpeg",
-                "MediaModificationTimestamp": "2022-08-03T23:17:25.833Z",
-                "MediaKey": "62eb02063388de1d2d0d5bde"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 27,
-                "ImageWidth": 511,
-                "ImageHeight": 768,
-                "ImageSizeDescription": "511x768",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR591507434/5908ae69-e1ac-4764-81cc-054be8622753.jpeg",
-                "MediaModificationTimestamp": "2022-09-12T21:46:51.873Z",
-                "MediaKey": "631fa8cbd971f13553749c90"
-            },
-            {
-                "LongDescription": "Addition to Florida room.",
-                "MediaType": "jpg",
-                "Order": 28,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/a2c8d098-a022-4715-8da2-e5627d0c48fa.jpeg",
-                "MediaModificationTimestamp": "2022-08-03T23:17:25.788Z",
-                "MediaKey": "62eb02063388de1d2d0d5be0"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 29,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/9fed2e1c-7735-4c31-b437-fa1e16c6a0cd.jpeg",
-                "MediaModificationTimestamp": "2022-08-03T23:17:25.833Z",
-                "MediaKey": "62eb02063388de1d2d0d5be1"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 30,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/7d697775-a07c-424b-862c-12b692f425a5.jpeg",
-                "MediaModificationTimestamp": "2022-08-03T23:17:25.814Z",
-                "MediaKey": "62eb02063388de1d2d0d5be2"
-            },
-            {
-                "LongDescription": "Inside Laundry room and water heater",
-                "MediaType": "jpg",
-                "Order": 31,
-                "ImageWidth": 512,
-                "ImageHeight": 768,
-                "ImageSizeDescription": "512x768",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/7cc4b134-39ec-46d3-8251-9c1f449b8bdc.jpeg",
-                "MediaModificationTimestamp": "2022-08-03T23:17:25.777Z",
-                "MediaKey": "62eb02063388de1d2d0d5be3"
-            },
-            {
-                "LongDescription": "Eat in Kitchen",
-                "MediaType": "jpg",
-                "Order": 32,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/40c2d2be-6ccb-4606-bb18-aa04bfe760a8.jpeg",
-                "MediaModificationTimestamp": "2022-08-03T23:17:25.779Z",
-                "MediaKey": "62eb02063388de1d2d0d5be4"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 33,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/0ce259dc-9f62-42bb-9cbf-bd70c513ee0f.jpeg",
-                "MediaModificationTimestamp": "2022-08-03T23:17:25.775Z",
-                "MediaKey": "62eb02063388de1d2d0d5be5"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 34,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/36595fcf-18f9-4735-b7b7-3be04e2f301f.jpeg",
-                "MediaModificationTimestamp": "2022-08-03T23:17:25.785Z",
-                "MediaKey": "62eb02063388de1d2d0d5be6"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 35,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/5921ede8-891c-4000-91a2-a292628174ab.jpeg",
-                "MediaModificationTimestamp": "2022-08-03T23:17:25.811Z",
-                "MediaKey": "62eb02063388de1d2d0d5be7"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 36,
-                "ImageWidth": 933,
-                "ImageHeight": 768,
-                "ImageSizeDescription": "933x768",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/2aeee256-9259-4e18-a9db-9c86c7fe6226.jpeg",
-                "MediaModificationTimestamp": "2022-08-03T23:17:25.779Z",
-                "MediaKey": "62eb02063388de1d2d0d5be8"
-            },
-            {
-                "MediaType": "jpg",
-                "Order": 37,
-                "ImageWidth": 1024,
-                "ImageHeight": 682,
-                "ImageSizeDescription": "1024x682",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR591507434/74d7557b-1a1e-4c8f-a765-1e9890105144.jpeg",
-                "MediaModificationTimestamp": "2022-10-03T17:58:52.415Z",
-                "MediaKey": "633b22dc33c0b0356f351eb4"
-            },
-            {
-                "LongDescription": "Kitchen Skylight",
-                "MediaType": "jpg",
-                "Order": 38,
-                "ImageWidth": 512,
-                "ImageHeight": 768,
-                "ImageSizeDescription": "512x768",
-                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR591507434/ea4b5523-4f87-474a-aaca-67e96c91f512.jpeg",
-                "MediaModificationTimestamp": "2022-10-02T18:33:16.601Z",
-                "MediaKey": "6339d96c861b0e44961c9ee3"
-            }
-        ],
-        "PhotosCount": 39,
-        "PhotosChangeTimestamp": "2022-10-03T17:59:09.342Z",
-        "Directions": "Google maps. Easy to locate.",
-        "Latitude": 29.020501,
-        "Longitude": -82.191743,
-        "StreetDirPrefix": "SW",
-        "StreetName": "42ND",
-        "StreetNumber": "13867",
-        "StreetSuffix": "AVENUE",
-        "UnparsedAddress": "13867 SW 42ND AVE",
-        "MlgCanView": true,
-        "MlgCanUse": [
-            "IDX"
-        ]
-    },
-    {
         "@odata.id": "https://api.mlsgrid.com/v2/Property('MFR678536177')",
         "ListingKey": "MFR678536177",
         "OriginatingSystemKey": "678536177",
@@ -1393,6 +755,644 @@
         "StreetNumber": "1715",
         "StreetSuffix": "WAY",
         "UnparsedAddress": "1715 ARECA WAY",
+        "MlgCanView": true,
+        "MlgCanUse": [
+            "IDX"
+        ]
+    },
+    {
+        "@odata.id": "https://api.mlsgrid.com/v2/Property('MFR591507434')",
+        "ListingKey": "MFR591507434",
+        "OriginatingSystemKey": "591507434",
+        "BathroomsFull": 2,
+        "BathroomsHalf": 0,
+        "BathroomsTotalInteger": 2,
+        "BedroomsTotal": 3,
+        "BuildingAreaUnits": "Square Feet",
+        "BuyerAgencyCompensation": "2.5%",
+        "Cooling": [
+            "Central Air"
+        ],
+        "CountyOrParish": "Marion",
+        "CumulativeDaysOnMarket": 280,
+        "DaysOnMarket": 280,
+        "Heating": [
+            "Central",
+            "Electric"
+        ],
+        "InternetAddressDisplayYN": true,
+        "InternetAutomatedValuationDisplayYN": true,
+        "InternetConsumerCommentYN": true,
+        "InternetEntireListingDisplayYN": true,
+        "ListAgentAOR": "Ocala - Marion",
+        "ListAgentDirectPhone": "352-857-7499",
+        "ListAgentEmail": "jorgesousarealtor@gmail.com",
+        "ListAgentFullName": "Jorge DeSousa",
+        "ListAgentKey": "MFR536943803",
+        "ListAgentMlsId": "MFR271515978",
+        "ListAOR": "Ocala - Marion",
+        "ListingAgreement": "Exclusive Right To Sell",
+        "ListingContractDate": "2022-07-26",
+        "ListingId": "MFROM643311",
+        "ListOfficeKey": "MFR1044912",
+        "ListOfficeMlsId": "MFR271500543",
+        "ListOfficeName": "PLATINUM HOMES AND LAND REALTY",
+        "ListOfficePhone": "352-620-0207",
+        "ListPrice": 245000,
+        "LivingArea": 1780,
+        "LivingAreaSource": "Public Records",
+        "LivingAreaUnits": "Square Feet",
+        "MlsStatus": "Active",
+        "OriginalEntryTimestamp": "2022-07-29T19:07:50.000Z",
+        "OriginalListPrice": 283000,
+        "MFR_OriginatingSystemName_": "Stellar MLS",
+        "ParcelNumber": "8001-0188-11",
+        "PostalCode": "34473",
+        "PostalCodePlus4": "2057",
+        "PreviousListPrice": 265000,
+        "PriceChangeTimestamp": "2023-05-05T16:54:52.000Z",
+        "PrivateRemarks": "PLEASE SUBMIT ALL OFFERS WITH A FLORIDA AS-IS CONTRACT AND INCLUDE POF AND OR PRE-APPROVAL WITH THE OFFER. COMMISSIONS PAID UPON A SUCCESSFUL CLOSING ONLY. INFORMATION IS DEEMED RELIABLE AND ROOM SIZES ARE TO BE VERIFIED BY THE BUYER AND THEIR AGENT. Older gentleman, please knock for access. Bring your best and highest offers. Motivated Seller. Must use showing time for appointments. Thank you for showing. Please take note, the home will be ready to show May 22nd. Home will be going through a deep cleaning. Family now has the home ( father ) has passed.",
+        "PropertySubType": "Single Family Residence",
+        "PropertyType": "Residential",
+        "PublicRemarks": "This is a home with great curb appeal and features a driveway made of pavers, a vinyl fence for privacy, a Florida room, a large fireplace in the family room, a spacious master bedroom and bathroom with a Jacuzzi tub, a split floor plan, a large galley kitchen with an eat-in area, roof from 2005 with solar panels to save on monthly electricity, A/C unit 3 years old and a water heater 4 years old, an indoor laundry room, and a spacious garage with storage. The home is conveniently located close to shopping, dining and RT 200 and I75. The seller is motivated, only serious buyers should inquire.  Please take note, the home will be ready to show May 22nd. Home will be going through a deep cleaning. Let's make the move together!",
+        "StandardStatus": "Active",
+        "StateOrProvince": "FL",
+        "StatusChangeTimestamp": "2023-02-02T16:45:21.000Z",
+        "StoriesTotal": 1,
+        "TaxYear": 2021,
+        "YearBuilt": 1988,
+        "MFR_PreviousStatus": "Temporarily Off-Market",
+        "MFR_CurrentPrice": "245000.00",
+        "MFR_RoomCount": "3",
+        "SpecialListingConditions": [
+            "None"
+        ],
+        "AdditionalParcelsYN": false,
+        "Appliances": [
+            "Cooktop",
+            "Dishwasher",
+            "Dryer",
+            "Electric Water Heater",
+            "Exhaust Fan",
+            "Range",
+            "Refrigerator",
+            "Washer"
+        ],
+        "AttachedGarageYN": true,
+        "MFR_AvailableForLeaseYN": "0",
+        "CarportYN": false,
+        "MFR_CDDYN": "0",
+        "ConstructionMaterials": [
+            "Block",
+            "Brick",
+            "Concrete",
+            "Stucco"
+        ],
+        "Country": "US",
+        "DirectionFaces": "West",
+        "Disclosures": [
+            "None",
+            "Seller Property Disclosure"
+        ],
+        "MFR_DPRURL": "https://www.workforce-resource.com/dpr/listing/MFRMLS/OM643311?w=Agent&skip_sso=true",
+        "MFR_DPRURL2": "https://www.workforce-resource.com/dpr/listing/MFRMLS/OM643311?w=Customer",
+        "MFR_DPRYN": "1",
+        "MFR_ExistLseTenantYN": "0",
+        "FireplaceYN": true,
+        "MFR_FloodZoneCode": "X",
+        "MFR_FloodZonePanel": "85",
+        "FoundationDetails": [
+            "Slab"
+        ],
+        "ExteriorFeatures": [
+            "Lighting"
+        ],
+        "Fencing": [
+            "Fenced",
+            "Vinyl"
+        ],
+        "GarageSpaces": 2,
+        "GarageYN": true,
+        "MFR_HomesteadYN": "1",
+        "Zoning": "R1",
+        "ListAgentFax": "352-304-5722",
+        "ListAgentPager": "352-857-7499",
+        "ListOfficeFax": "352-304-5722",
+        "LotSizeAcres": 0.24,
+        "LotSizeDimensions": "85x125",
+        "LotSizeSquareFeet": 10454,
+        "NewConstructionYN": false,
+        "Ownership": "Fee Simple",
+        "ParkingFeatures": [
+            "Driveway",
+            "Garage Door Opener"
+        ],
+        "PoolPrivateYN": false,
+        "PublicSurveyRange": "21E",
+        "PublicSurveySection": "10",
+        "MFR_RealtorInfo": "As-Is,Sign",
+        "Roof": [
+            "Shingle"
+        ],
+        "SeniorCommunityYN": false,
+        "ShowingRequirements": [
+            "Call Listing Agent",
+            "Go Direct",
+            "See Remarks",
+            "ShowingTime"
+        ],
+        "SubdivisionName": "MARION OAKS UN 01",
+        "City": "OCALA",
+        "TaxAnnualAmount": 1086.32,
+        "TaxBlock": "188",
+        "TaxBookNumber": "O-001",
+        "TaxLegalDescription": "SEC 10 TWP 17 RGE 21 PLAT BOOK O PAGE 001 MARION OAKS UNIT 1 BLK 188 LOT 11",
+        "TaxLot": "11",
+        "MFR_TotalAcreage": "0 to less than 1/4",
+        "Township": "17S",
+        "TransactionBrokerCompensation": "2.5%",
+        "Utilities": [
+            "Cable Connected",
+            "Electricity Connected",
+            "Solar"
+        ],
+        "VirtualTourURLUnbranded": "https://www.propertypanorama.com/instaview/stellar/OM643311",
+        "MFR_WaterAccessYN": "0",
+        "MFR_WaterExtrasYN": "0",
+        "MFR_WaterfrontFeetTotal": "0",
+        "WaterfrontYN": false,
+        "WaterSource": [
+            "Public"
+        ],
+        "MFR_WaterViewYN": "0",
+        "MLSAreaMajor": "34473 - Ocala",
+        "AssociationYN": false,
+        "GreenEnergyGeneration": [
+            "Solar"
+        ],
+        "InteriorFeatures": [
+            "Ceiling Fans(s)",
+            "Eat-in Kitchen",
+            "Living Room/Dining Room Combo"
+        ],
+        "ListingTerms": [
+            "Cash",
+            "Conventional",
+            "FHA",
+            "VA Loan"
+        ],
+        "Flooring": [
+            "Carpet",
+            "Vinyl"
+        ],
+        "Sewer": [
+            "Public Sewer"
+        ],
+        "MFR_CalculatedListPriceByCalculatedSqFt": "137.64",
+        "Levels": [
+            "One"
+        ],
+        "MFR_ListOfficeHeadOfficeKeyNumeric": "1044912",
+        "MFR_NonRepCompensation": "2.5%",
+        "MFR_UnitNumberYN": "0",
+        "MFR_RATIO_CurrentPrice_By_CalculatedSqFt": "137.64",
+        "MFR_LivingAreaMeters": "165.37",
+        "MFR_LotSizeSquareMeters": "971",
+        "MFR_SDEOYN": "0",
+        "MFR_PublicRemarksAgent": "This is a home with great curb appeal and features a driveway made of pavers, a vinyl fence for privacy, a Florida room, a large fireplace in the family room, a spacious master bedroom and bathroom with a Jacuzzi tub, a split floor plan, a large galley kitchen with an eat-in area, roof from 2005 with solar panels to save on monthly electricity, A/C unit 3 years old and a water heater 4 years old, an indoor laundry room, and a spacious garage with storage. The home is conveniently located close to shopping, dining and RT 200 and I75. The seller is motivated, only serious buyers should inquire.  Please take note, the home will be ready to show May 22nd. Home will be going through a deep cleaning. Let's make the move together!",
+        "MFR_TotalAnnualFees": "0.00",
+        "MFR_TotalMonthlyFees": "0.00",
+        "MFR_GreenVerificationCount": "0",
+        "UniversalPropertyId": "US-12083-N-8001018811-R-N",
+        "MFR_ListingExclusionYN": "0",
+        "OccupantType": "Owner",
+        "RoadSurfaceType": [
+            "Paved"
+        ],
+        "MFR_EscrowAgentEmail": "ali.endicott@firstintitle.com",
+        "MFR_EscrowAgentName": "Ali Endicott",
+        "MFR_EscrowAgentPhone": "352-513-4856",
+        "MFR_EscrowCity": "Dunnellon",
+        "MFR_EscrowCompany": "First International Title",
+        "MFR_EscrowPostalCode": "34432",
+        "MFR_EscrowState": "FL",
+        "MFR_EscrowStreetName": "Mary Street",
+        "MFR_EscrowStreetNumber": "12013",
+        "OnMarketDate": "2022-07-29",
+        "MFR_Association2YN": "0",
+        "ModificationTimestamp": "2023-05-09T14:36:08.604Z",
+        "OriginatingSystemName": "mfrmls",
+        "Media": [
+            {
+                "MediaType": "jpg",
+                "Order": 0,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/276c8fa1-2272-4c28-ac6f-9aa67d067e1a.jpeg",
+                "MediaModificationTimestamp": "2022-07-29T19:08:42.172Z",
+                "MediaKey": "62e4303a4397d76d56e45e58"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 1,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/ec1eb54e-3db8-4572-8413-4e8d563f6a9c.jpeg",
+                "MediaModificationTimestamp": "2022-07-29T19:08:42.189Z",
+                "MediaKey": "62e4303a4397d76d56e45e59"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 2,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/72977767-eae5-4a74-b196-06fe42486f06.jpeg",
+                "MediaModificationTimestamp": "2022-07-29T19:08:42.204Z",
+                "MediaKey": "62e4303a4397d76d56e45e5a"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 3,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/9516f976-a14e-41da-910d-38ed7c82c6c2.jpeg",
+                "MediaModificationTimestamp": "2022-07-29T19:08:42.181Z",
+                "MediaKey": "62e4303a4397d76d56e45e5b"
+            },
+            {
+                "LongDescription": "Front Sitting Area",
+                "MediaType": "jpg",
+                "Order": 4,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/099551b8-785a-47d2-b890-345712eb7e06.jpeg",
+                "MediaModificationTimestamp": "2022-07-29T19:08:42.198Z",
+                "MediaKey": "62e4303a4397d76d56e45e5c"
+            },
+            {
+                "LongDescription": "Driveway Pavers",
+                "MediaType": "jpg",
+                "Order": 5,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/1cb43e17-cca8-48f5-adb6-944e107efbec.jpeg",
+                "MediaModificationTimestamp": "2022-07-29T19:08:42.203Z",
+                "MediaKey": "62e4303a4397d76d56e45e5d"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 6,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/3250ce61-407b-4f8c-9814-ea0f9ecf7ca1.jpeg",
+                "MediaModificationTimestamp": "2022-07-29T19:08:42.169Z",
+                "MediaKey": "62e4303a4397d76d56e45e5e"
+            },
+            {
+                "LongDescription": "A/C Unit 3Yrs Old",
+                "MediaType": "jpg",
+                "Order": 7,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/893172f4-2d0c-48ed-b859-32c1520d4a54.jpeg",
+                "MediaModificationTimestamp": "2022-07-29T19:08:42.152Z",
+                "MediaKey": "62e4303a4397d76d56e45e5f"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 8,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/1bae04d9-9fe7-4f07-8709-e3d4198eade5.jpeg",
+                "MediaModificationTimestamp": "2022-07-29T19:08:42.204Z",
+                "MediaKey": "62e4303a4397d76d56e45e60"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 9,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/e5c2c2b2-a115-4fac-8bcd-6ee78d70d63e.jpeg",
+                "MediaModificationTimestamp": "2022-07-29T19:08:42.169Z",
+                "MediaKey": "62e4303a4397d76d56e45e61"
+            },
+            {
+                "LongDescription": "Solar Panels",
+                "MediaType": "jpg",
+                "Order": 10,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/f8009882-e4dd-4002-ae02-73dd3cbaf86e.jpeg",
+                "MediaModificationTimestamp": "2022-07-29T19:08:42.169Z",
+                "MediaKey": "62e4303a4397d76d56e45e62"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 11,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/ba416965-8ed0-4abd-9788-05952f0f4b72.jpeg",
+                "MediaModificationTimestamp": "2022-07-29T19:08:42.158Z",
+                "MediaKey": "62e4303a4397d76d56e45e63"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 12,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/18d074c6-095c-405d-aaab-ffde9c38d965.jpeg",
+                "MediaModificationTimestamp": "2022-07-29T19:08:42.217Z",
+                "MediaKey": "62e4303a4397d76d56e45e64"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 13,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/cd4a6d81-9ed5-4ec4-b5bc-66f963e48bca.jpeg",
+                "MediaModificationTimestamp": "2022-07-29T19:08:42.203Z",
+                "MediaKey": "62e4303a4397d76d56e45e65"
+            },
+            {
+                "LongDescription": "Front Door entry way",
+                "MediaType": "jpg",
+                "Order": 14,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/e03911ca-4377-4b6c-b43c-d36997526e33.jpeg",
+                "MediaModificationTimestamp": "2022-08-03T23:17:26.039Z",
+                "MediaKey": "62eb02063388de1d2d0d5bd3"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 15,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR591507434/67ec2c37-d004-43f4-b18b-9785e0bfae4e.jpeg",
+                "MediaModificationTimestamp": "2022-09-12T21:46:51.839Z",
+                "MediaKey": "631fa8cbd971f13553749c8a"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 16,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR591507434/71a850fc-3d7c-433b-9ced-77aeb9f74c84.jpeg",
+                "MediaModificationTimestamp": "2022-09-12T21:46:51.834Z",
+                "MediaKey": "631fa8cbd971f13553749c8b"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 17,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/a282bcec-9167-4aa4-89f5-4ae817777291.jpeg",
+                "MediaModificationTimestamp": "2022-08-03T23:17:25.783Z",
+                "MediaKey": "62eb02063388de1d2d0d5bd6"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 18,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/98071914-2a26-4f4f-b15a-5d7fc705ab52.jpeg",
+                "MediaModificationTimestamp": "2022-08-03T23:17:25.780Z",
+                "MediaKey": "62eb02063388de1d2d0d5bd7"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 19,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR591507434/d930fa57-c3f8-4c88-bb42-d5b18faf0f05.jpeg",
+                "MediaModificationTimestamp": "2022-09-12T21:46:51.832Z",
+                "MediaKey": "631fa8cbd971f13553749c8c"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 20,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR591507434/e21c2822-30dc-4883-bfda-44e92d6e27ec.jpeg",
+                "MediaModificationTimestamp": "2022-09-12T21:46:51.834Z",
+                "MediaKey": "631fa8cbd971f13553749c8d"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 21,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/cb5f07b7-8b54-4d14-a46e-1526581d42b4.jpeg",
+                "MediaModificationTimestamp": "2022-08-03T23:17:25.808Z",
+                "MediaKey": "62eb02063388de1d2d0d5bda"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 22,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/1e76cef1-3b03-4f11-82fa-c786c35dc2a4.jpeg",
+                "MediaModificationTimestamp": "2022-08-03T23:17:25.796Z",
+                "MediaKey": "62eb02063388de1d2d0d5bdb"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 23,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/70990772-a6ec-475c-91bb-14f28c135920.jpeg",
+                "MediaModificationTimestamp": "2022-08-03T23:17:25.786Z",
+                "MediaKey": "62eb02063388de1d2d0d5bdc"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 24,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR591507434/b9e37ee2-f17b-4dfe-94f3-8c83a28f0869.jpeg",
+                "MediaModificationTimestamp": "2022-09-12T21:46:51.838Z",
+                "MediaKey": "631fa8cbd971f13553749c8e"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 25,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR591507434/6d7f516c-4b84-478c-a515-05eefd34ea87.jpeg",
+                "MediaModificationTimestamp": "2022-09-12T21:46:51.839Z",
+                "MediaKey": "631fa8cbd971f13553749c8f"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 26,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/0f8cc5b7-945f-4231-9d35-6369dbdc5d72.jpeg",
+                "MediaModificationTimestamp": "2022-08-03T23:17:25.833Z",
+                "MediaKey": "62eb02063388de1d2d0d5bde"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 27,
+                "ImageWidth": 511,
+                "ImageHeight": 768,
+                "ImageSizeDescription": "511x768",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR591507434/5908ae69-e1ac-4764-81cc-054be8622753.jpeg",
+                "MediaModificationTimestamp": "2022-09-12T21:46:51.873Z",
+                "MediaKey": "631fa8cbd971f13553749c90"
+            },
+            {
+                "LongDescription": "Addition to Florida room.",
+                "MediaType": "jpg",
+                "Order": 28,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/a2c8d098-a022-4715-8da2-e5627d0c48fa.jpeg",
+                "MediaModificationTimestamp": "2022-08-03T23:17:25.788Z",
+                "MediaKey": "62eb02063388de1d2d0d5be0"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 29,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/9fed2e1c-7735-4c31-b437-fa1e16c6a0cd.jpeg",
+                "MediaModificationTimestamp": "2022-08-03T23:17:25.833Z",
+                "MediaKey": "62eb02063388de1d2d0d5be1"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 30,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/7d697775-a07c-424b-862c-12b692f425a5.jpeg",
+                "MediaModificationTimestamp": "2022-08-03T23:17:25.814Z",
+                "MediaKey": "62eb02063388de1d2d0d5be2"
+            },
+            {
+                "LongDescription": "Inside Laundry room and water heater",
+                "MediaType": "jpg",
+                "Order": 31,
+                "ImageWidth": 512,
+                "ImageHeight": 768,
+                "ImageSizeDescription": "512x768",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/7cc4b134-39ec-46d3-8251-9c1f449b8bdc.jpeg",
+                "MediaModificationTimestamp": "2022-08-03T23:17:25.777Z",
+                "MediaKey": "62eb02063388de1d2d0d5be3"
+            },
+            {
+                "LongDescription": "Eat in Kitchen",
+                "MediaType": "jpg",
+                "Order": 32,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/40c2d2be-6ccb-4606-bb18-aa04bfe760a8.jpeg",
+                "MediaModificationTimestamp": "2022-08-03T23:17:25.779Z",
+                "MediaKey": "62eb02063388de1d2d0d5be4"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 33,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/0ce259dc-9f62-42bb-9cbf-bd70c513ee0f.jpeg",
+                "MediaModificationTimestamp": "2022-08-03T23:17:25.775Z",
+                "MediaKey": "62eb02063388de1d2d0d5be5"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 34,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/36595fcf-18f9-4735-b7b7-3be04e2f301f.jpeg",
+                "MediaModificationTimestamp": "2022-08-03T23:17:25.785Z",
+                "MediaKey": "62eb02063388de1d2d0d5be6"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 35,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/5921ede8-891c-4000-91a2-a292628174ab.jpeg",
+                "MediaModificationTimestamp": "2022-08-03T23:17:25.811Z",
+                "MediaKey": "62eb02063388de1d2d0d5be7"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 36,
+                "ImageWidth": 933,
+                "ImageHeight": 768,
+                "ImageSizeDescription": "933x768",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/2aeee256-9259-4e18-a9db-9c86c7fe6226.jpeg",
+                "MediaModificationTimestamp": "2022-08-03T23:17:25.779Z",
+                "MediaKey": "62eb02063388de1d2d0d5be8"
+            },
+            {
+                "MediaType": "jpg",
+                "Order": 37,
+                "ImageWidth": 1024,
+                "ImageHeight": 682,
+                "ImageSizeDescription": "1024x682",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR591507434/74d7557b-1a1e-4c8f-a765-1e9890105144.jpeg",
+                "MediaModificationTimestamp": "2022-10-03T17:58:52.415Z",
+                "MediaKey": "633b22dc33c0b0356f351eb4"
+            },
+            {
+                "LongDescription": "Kitchen Skylight",
+                "MediaType": "jpg",
+                "Order": 38,
+                "ImageWidth": 512,
+                "ImageHeight": 768,
+                "ImageSizeDescription": "512x768",
+                "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/MFR591507434/ea4b5523-4f87-474a-aaca-67e96c91f512.jpeg",
+                "MediaModificationTimestamp": "2022-10-02T18:33:16.601Z",
+                "MediaKey": "6339d96c861b0e44961c9ee3"
+            }
+        ],
+        "PhotosCount": 39,
+        "PhotosChangeTimestamp": "2022-10-03T17:59:09.342Z",
+        "Directions": "Google maps. Easy to locate.",
+        "Latitude": 29.020501,
+        "Longitude": -82.191743,
+        "StreetDirPrefix": "SW",
+        "StreetName": "42ND",
+        "StreetNumber": "13867",
+        "StreetSuffix": "AVENUE",
+        "UnparsedAddress": "13867 SW 42ND AVE",
         "MlgCanView": true,
         "MlgCanUse": [
             "IDX"

@@ -11,7 +11,9 @@ import Footer from './Pages/Footer';
 import ListingPage from './Pages/ListingPage';
 import County from './County';
 import Search from "./Pages/Search";
+import Privacypolicy from "./Pages/Privacypolicy";
 import { ParallaxProvider } from "react-scroll-parallax";
+import SousaFooter from "./SousaFooter";
 
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
             <NavBar/>
             <Routes>
               <Route path='/' element={<Home/>}/>
+              <Route path='/privacy-policy' element={<Privacypolicy/>}/>
               <Route path='/About' element={<About/>}/>
               <Route path='/Contact' element={<Contact/>}/>
               <Route path='/Search/:propertyType' element={<Search/>}/>
@@ -32,6 +35,7 @@ function App() {
               <Route path='/:county' element={<Listings/>}/>
             </Routes>
             <Footer/>
+            <SousaFooter/>
           </Router>
         </div>
       </div>
